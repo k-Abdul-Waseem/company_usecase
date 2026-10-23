@@ -1,0 +1,169 @@
+{
+  "users": [
+    {
+      "id": "u-mgr-001",
+      "employeeId": "EMP10001",
+      "name": "Priya Menon",
+      "email": "manager@hcltech.com",
+      "role": "manager",
+      "projectId": "p-adb",
+      "projectName": "Project ADB",
+      "department": "Learning & Development",
+      "title": "Learning Program Manager",
+      "location": "Bengaluru, India",
+      "managerName": "Ravi Shankar",
+      "joinedAt": "2023-04-11T09:00:00.000Z"
+    },
+    {
+      "id": "u-mgr-002",
+      "employeeId": "EMP10002",
+      "name": "Rahul Verma",
+      "email": "rahul.verma@hcltech.com",
+      "role": "manager",
+      "projectId": "p-atlas",
+      "projectName": "Project ATLAS",
+      "department": "Program Delivery",
+      "title": "Program Director",
+      "location": "Hyderabad, India",
+      "managerName": "Ravi Shankar",
+      "joinedAt": "2022-11-02T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-001",
+      "employeeId": "EMP20481",
+      "name": "Lokesh Iyer",
+      "email": "learner@hcltech.com",
+      "role": "learner",
+      "learningRole": "developer",
+      "projectId": "p-adb",
+      "projectName": "Project ADB",
+      "department": "Retail Banking",
+      "title": "Software Engineer",
+      "location": "Chennai, India",
+      "managerName": "Priya Menon",
+      "joinedAt": "2026-02-02T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-002",
+      "employeeId": "EMP20512",
+      "name": "Ananya Rao",
+      "email": "tester@hcltech.com",
+      "role": "learner",
+      "learningRole": "tester",
+      "projectId": "p-adb",
+      "projectName": "Project ADB",
+      "department": "Quality Engineering",
+      "title": "QA Engineer",
+      "location": "Pune, India",
+      "managerName": "Priya Menon",
+      "joinedAt": "2026-02-16T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-003",
+      "employeeId": "EMP20930",
+      "name": "Karthik Nair",
+      "email": "karthik.nair@hcltech.com",
+      "role": "learner",
+      "learningRole": "developer",
+      "projectId": "p-adb",
+      "projectName": "Project ADB",
+      "department": "Retail Banking",
+      "title": "Senior Software Engineer",
+      "location": "Kochi, India",
+      "managerName": "Priya Menon",
+      "joinedAt": "2026-01-12T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-004",
+      "employeeId": "EMP21144",
+      "name": "Sneha Kulkarni",
+      "email": "sneha.kulkarni@hcltech.com",
+      "role": "learner",
+      "learningRole": "tester",
+      "projectId": "p-adb",
+      "projectName": "Project ADB",
+      "department": "Quality Engineering",
+      "title": "Test Engineer",
+      "location": "Pune, India",
+      "managerName": "Priya Menon",
+      "joinedAt": "2026-01-19T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-005",
+      "employeeId": "EMP21402",
+      "name": "Imran Shaikh",
+      "email": "imran.shaikh@hcltech.com",
+      "role": "learner",
+      "learningRole": "developer",
+      "projectId": "p-atlas",
+      "projectName": "Project ATLAS",
+      "department": "Retail Technology",
+      "title": "Software Engineer",
+      "location": "Bengaluru, India",
+      "managerName": "Rahul Verma",
+      "joinedAt": "2026-02-24T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-006",
+      "employeeId": "EMP21630",
+      "name": "Divya Menon",
+      "email": "divya.menon@hcltech.com",
+      "role": "learner",
+      "learningRole": "tester",
+      "projectId": "p-atlas",
+      "projectName": "Project ATLAS",
+      "department": "Quality Engineering",
+      "title": "Senior Test Engineer",
+      "location": "Bengaluru, India",
+      "managerName": "Rahul Verma",
+      "joinedAt": "2026-03-02T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-007",
+      "employeeId": "EMP21755",
+      "name": "Nikhil Gupta",
+      "email": "nikhil.gupta@hcltech.com",
+      "role": "learner",
+      "learningRole": "developer",
+      "projectId": "p-adb",
+      "projectName": "Project ADB",
+      "department": "Payments",
+      "title": "Associate Software Engineer",
+      "location": "Noida, India",
+      "managerName": "Priya Menon",
+      "joinedAt": "2026-03-09T09:00:00.000Z"
+    },
+    {
+      "id": "u-lrn-008",
+      "employeeId": "EMP21880",
+      "name": "Meera Joshi",
+      "email": "meera.joshi@hcltech.com",
+      "role": "learner",
+      "learningRole": "tester",
+      "projectId": "p-nimbus",
+      "projectName": "Project NIMBUS",
+      "department": "Logistics Technology",
+      "title": "Test Engineer",
+      "location": "Gurugram, India",
+      "managerName": "Rahul Verma",
+      "joinedAt": "2026-03-15T09:00:00.000Z"
+    }
+  ],
+  "credentials": [
+    {
+      "email": "manager@hcltech.com",
+      "password": "Manager@123",
+      "userId": "u-mgr-001"
+    },
+    {
+      "email": "learner@hcltech.com",
+      "password": "Learner@123",
+      "userId": "u-lrn-001"
+    },
+    {
+      "email": "tester@hcltech.com",
+      "password": "Tester@123",
+      "userId": "u-lrn-002"
+    }
+  ]
+}

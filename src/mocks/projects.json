@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "id": "p-adb",
+      "name": "Project ADB",
+      "code": "ADB",
+      "client": "Meridian Financial Services",
+      "description": "Core banking onboarding and account servicing platform for Meridian's retail and SME divisions.",
+      "startDate": "2026-01-06T00:00:00.000Z",
+      "endDate": "2027-03-31T00:00:00.000Z",
+      "learnerCount": 48,
+      "moduleCount": 9,
+      "status": "active",
+      "accentColor": "#2563eb"
+    },
+    {
+      "id": "p-atlas",
+      "name": "Project ATLAS",
+      "code": "ATLAS",
+      "client": "Helix Retail Group",
+      "description": "Unified commerce and loyalty platform spanning store, web and mobile channels.",
+      "startDate": "2026-02-02T00:00:00.000Z",
+      "endDate": "2026-12-18T00:00:00.000Z",
+      "learnerCount": 31,
+      "moduleCount": 9,
+      "status": "active",
+      "accentColor": "#6366f1"
+    },
+    {
+      "id": "p-nimbus",
+      "name": "Project NIMBUS",
+      "code": "NIMBUS",
+      "client": "Vertex Logistics",
+      "description": "Fleet visibility and route optimisation platform with real-time telemetry ingestion.",
+      "startDate": "2026-03-02T00:00:00.000Z",
+      "endDate": "2027-01-30T00:00:00.000Z",
+      "learnerCount": 17,
+      "moduleCount": 9,
+      "status": "planning",
+      "accentColor": "#0ea5e9"
+    }
+  ]
+}

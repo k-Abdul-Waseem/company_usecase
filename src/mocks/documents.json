@@ -1,0 +1,356 @@
+{
+  "documents": [
+    {
+      "id": "doc-client-domain-charter",
+      "projectId": "p-adb",
+      "name": "Project ADB Programme Charter",
+      "version": "v1.0",
+      "size": 1887437,
+      "sizeLabel": "1.8 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-09-24T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 24,
+      "chunkCount": 186,
+      "moduleIds": [
+        "mod-client-domain"
+      ]
+    },
+    {
+      "id": "doc-domain-glossary",
+      "projectId": "p-adb",
+      "name": "Meridian Domain Glossary",
+      "version": "v2.1",
+      "size": 327680,
+      "sizeLabel": "0.3 MB",
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "uploadedAt": "2026-09-26T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 12,
+      "chunkCount": 74,
+      "moduleIds": [
+        "mod-client-domain"
+      ]
+    },
+    {
+      "id": "doc-environment-guide",
+      "projectId": "p-adb",
+      "name": "Environment Setup Guide",
+      "version": "v3.2",
+      "size": 2516582,
+      "sizeLabel": "2.4 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-09-28T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 38,
+      "chunkCount": 264,
+      "moduleIds": [
+        "mod-environment-access"
+      ]
+    },
+    {
+      "id": "doc-access-matrix",
+      "projectId": "p-adb",
+      "name": "Access Request Matrix",
+      "version": "v1.3",
+      "size": 184320,
+      "sizeLabel": "0.2 MB",
+      "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "uploadedAt": "2026-09-30T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 3,
+      "chunkCount": 18,
+      "moduleIds": [
+        "mod-environment-access"
+      ]
+    },
+    {
+      "id": "doc-architecture-overview",
+      "projectId": "p-adb",
+      "name": "Architecture Overview",
+      "version": "v2.4",
+      "size": 3250586,
+      "sizeLabel": "3.1 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-02T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 52,
+      "chunkCount": 412,
+      "moduleIds": [
+        "mod-application-overview"
+      ]
+    },
+    {
+      "id": "doc-context-map",
+      "projectId": "p-adb",
+      "name": "Bounded Context Map",
+      "version": "v3.0",
+      "size": 742400,
+      "sizeLabel": "0.7 MB",
+      "mimeType": "image/png",
+      "uploadedAt": "2026-10-04T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 1,
+      "chunkCount": 4,
+      "moduleIds": [
+        "mod-application-overview"
+      ]
+    },
+    {
+      "id": "doc-security-policy",
+      "projectId": "p-adb",
+      "name": "Information Handling Policy",
+      "version": "v1.1",
+      "size": 1258291,
+      "sizeLabel": "1.2 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-06T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 18,
+      "chunkCount": 142,
+      "moduleIds": [
+        "mod-security-guidelines"
+      ]
+    },
+    {
+      "id": "doc-project-restrictions",
+      "projectId": "p-adb",
+      "name": "Project Restrictions Summary",
+      "version": "v2.2",
+      "size": 143360,
+      "sizeLabel": "0.1 MB",
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "uploadedAt": "2026-10-08T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 6,
+      "chunkCount": 41,
+      "moduleIds": [
+        "mod-security-guidelines"
+      ]
+    },
+    {
+      "id": "doc-engineering-standards",
+      "projectId": "p-adb",
+      "name": "Engineering Standards",
+      "version": "v3.3",
+      "size": 3040870,
+      "sizeLabel": "2.9 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-10T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 44,
+      "chunkCount": 356,
+      "moduleIds": [
+        "mod-dev-lifecycle"
+      ]
+    },
+    {
+      "id": "doc-pr-template",
+      "projectId": "p-adb",
+      "name": "Pull Request Template",
+      "version": "v1.4",
+      "size": 8192,
+      "sizeLabel": "0.0 MB",
+      "mimeType": "text/markdown",
+      "uploadedAt": "2026-10-12T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 2,
+      "chunkCount": 6,
+      "moduleIds": [
+        "mod-dev-lifecycle"
+      ]
+    },
+    {
+      "id": "doc-testing-standards",
+      "projectId": "p-adb",
+      "name": "Testing Standards",
+      "version": "v2.0",
+      "size": 1992294,
+      "sizeLabel": "1.9 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-14T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 30,
+      "chunkCount": 228,
+      "moduleIds": [
+        "mod-unit-testing"
+      ]
+    },
+    {
+      "id": "doc-release-runbook",
+      "projectId": "p-adb",
+      "name": "Release Runbook",
+      "version": "v3.1",
+      "size": 778240,
+      "sizeLabel": "0.7 MB",
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "uploadedAt": "2026-10-16T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 22,
+      "chunkCount": 164,
+      "moduleIds": [
+        "mod-unit-testing"
+      ]
+    },
+    {
+      "id": "doc-test-strategy",
+      "projectId": "p-adb",
+      "name": "Test Strategy Document",
+      "version": "v1.2",
+      "size": 2306867,
+      "sizeLabel": "2.2 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-18T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 34,
+      "chunkCount": 276,
+      "moduleIds": [
+        "mod-testing-strategy"
+      ]
+    },
+    {
+      "id": "doc-env-data-matrix",
+      "projectId": "p-adb",
+      "name": "Environment Data Matrix",
+      "version": "v2.3",
+      "size": 215040,
+      "sizeLabel": "0.2 MB",
+      "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "uploadedAt": "2026-10-20T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 4,
+      "chunkCount": 22,
+      "moduleIds": [
+        "mod-testing-strategy"
+      ]
+    },
+    {
+      "id": "doc-test-data-handbook",
+      "projectId": "p-adb",
+      "name": "Test Data Handbook",
+      "version": "v3.4",
+      "size": 1677722,
+      "sizeLabel": "1.6 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-22T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 26,
+      "chunkCount": 198,
+      "moduleIds": [
+        "mod-test-data-execution"
+      ]
+    },
+    {
+      "id": "doc-evidence-standards",
+      "projectId": "p-adb",
+      "name": "Evidence Standards",
+      "version": "v1.0",
+      "size": 153600,
+      "sizeLabel": "0.1 MB",
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "uploadedAt": "2026-10-24T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 8,
+      "chunkCount": 52,
+      "moduleIds": [
+        "mod-test-data-execution"
+      ]
+    },
+    {
+      "id": "doc-defect-guide",
+      "projectId": "p-adb",
+      "name": "Defect Management Guide",
+      "version": "v2.1",
+      "size": 1468006,
+      "sizeLabel": "1.4 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-26T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 20,
+      "chunkCount": 154,
+      "moduleIds": [
+        "mod-regression-validation"
+      ]
+    },
+    {
+      "id": "doc-release-checklist",
+      "projectId": "p-adb",
+      "name": "Release Readiness Checklist",
+      "version": "v3.2",
+      "size": 194560,
+      "sizeLabel": "0.2 MB",
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "uploadedAt": "2026-10-28T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "indexed",
+      "pageCount": 9,
+      "chunkCount": 48,
+      "moduleIds": [
+        "mod-regression-validation"
+      ]
+    },
+    {
+      "id": "doc-atlas-sprint-playbook",
+      "projectId": "p-atlas",
+      "name": "ATLAS Sprint Playbook",
+      "version": "v3.1",
+      "size": 2097152,
+      "sizeLabel": "2.0 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-21T09:00:00.000Z",
+      "uploadedBy": "Rahul Verma",
+      "status": "processing",
+      "pageCount": 28,
+      "chunkCount": 0,
+      "moduleIds": []
+    },
+    {
+      "id": "doc-adb-release-notes",
+      "projectId": "p-adb",
+      "name": "ADB Release Notes — October",
+      "version": "v1.0",
+      "size": 512000,
+      "sizeLabel": "0.5 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-19T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "uploaded",
+      "pageCount": 14,
+      "chunkCount": 0,
+      "moduleIds": []
+    },
+    {
+      "id": "doc-legacy-scan",
+      "projectId": "p-adb",
+      "name": "Legacy System Scan (quarantined)",
+      "version": "v0.2",
+      "size": 4194304,
+      "sizeLabel": "4.0 MB",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-16T09:00:00.000Z",
+      "uploadedBy": "Priya Menon",
+      "status": "failed",
+      "pageCount": 0,
+      "chunkCount": 0,
+      "errorMessage": "Indexing failed: document contains an unsupported embedded font. Export as PDF/A and retry.",
+      "moduleIds": []
+    }
+  ]
+}

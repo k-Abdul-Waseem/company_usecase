@@ -1,0 +1,492 @@
+{
+  "suggestedQuestions": [
+    {
+      "id": "sq-1",
+      "text": "How do I request access to the development environment?",
+      "category": "Environment"
+    },
+    { "id": "sq-2", "text": "Can I use production data in the test environment?", "category": "Security" },
+    { "id": "sq-3", "text": "What branch naming convention should I use?", "category": "Development" },
+    { "id": "sq-4", "text": "What is the difference between severity and priority?", "category": "Testing" },
+    { "id": "sq-5", "text": "What should I complete in my first week?", "category": "Onboarding" },
+    { "id": "sq-6", "text": "How is my readiness score calculated?", "category": "Progress" }
+  ],
+  "responses": [
+    {
+      "id": "resp-access",
+      "intent": "environment_access",
+      "keywords": [
+        "access",
+        "request access",
+        "permission",
+        "environment",
+        "setup",
+        "developer environment",
+        "vpn",
+        "install",
+        "credentials",
+        "repository access"
+      ],
+      "answer": "Access on Project ADB is provisioned as a role-based bundle rather than system by system.\n\n1. Raise the access request template through the service desk and include your learning role (Developer or Tester) and the project code ADB.\n2. Your manager approves the business justification.\n3. IT fulfils the bundle, which includes the repository, CI, approved tooling and non-production environments.\n\nOnce the bundle is active, complete workstation setup in this order: join the HCLTech domain and enrol in MFA, install the pinned engineering baseline from the software portal, then run the environment verification script. If a certificate error appears on the internal registry, re-import the corporate root certificate and restart your terminal - never disable TLS verification.",
+      "sources": [
+        {
+          "id": "src-access-1",
+          "title": "Environment & Access",
+          "type": "module",
+          "moduleId": "mod-environment-access",
+          "excerpt": "Access is granted as a bundle matched to your learning role. Individual per-system requests and credential sharing are prohibited.",
+          "reference": "Module 2 - Access provisioning"
+        },
+        {
+          "id": "src-access-2",
+          "title": "Access Request Matrix",
+          "type": "document",
+          "documentId": "doc-access-matrix",
+          "excerpt": "Developer and Tester bundles, approver chain and expected fulfilment windows.",
+          "reference": "v1.3 - Sheet 1"
+        },
+        {
+          "id": "src-access-3",
+          "title": "Environment Setup Guide",
+          "type": "document",
+          "documentId": "doc-environment-guide",
+          "excerpt": "Approved workstation sequence, pinned toolchain versions and common setup failures.",
+          "reference": "v3.2 - Sections 2-4"
+        }
+      ],
+      "suggestedQuestions": [
+        "What is included in the Developer access bundle?",
+        "How long does access provisioning normally take?",
+        "What do I do if the internal registry certificate fails?"
+      ]
+    },
+    {
+      "id": "resp-security",
+      "intent": "security_data",
+      "keywords": [
+        "production data",
+        "test data",
+        "customer data",
+        "security",
+        "restricted",
+        "compliance",
+        "incident",
+        "data handling",
+        "pii",
+        "screenshot",
+        "mask",
+        "synthetic"
+      ],
+      "answer": "Production data must never be copied into a non-production environment. Test environments use synthetic data generated with the approved generator and a deterministic seed, or masked client-owned data in UAT under the data owner's approval.\n\nKey rules:\n• Restricted data such as customer identity documents is handled only in approved environments, with no local copy.\n• Direct production database access is prohibited; use the audited servicing tools.\n• If you suspect data has been exposed, stop the activity, secure the data and report it through the security helpline within one hour. Do not investigate alone and do not delete evidence.\n\nThe production change freeze runs from the last business day of each month.",
+      "sources": [
+        {
+          "id": "src-sec-1",
+          "title": "Security & Guidelines",
+          "type": "module",
+          "moduleId": "mod-security-guidelines",
+          "excerpt": "Restricted data is handled only in approved environments with no local copy. Report suspected exposure within one hour.",
+          "reference": "Module 4 - Information handling"
+        },
+        {
+          "id": "src-sec-2",
+          "title": "Information Handling Policy",
+          "type": "document",
+          "documentId": "doc-security-policy",
+          "excerpt": "Data classification, permitted locations and incident escalation routes.",
+          "reference": "v1.1 - Sections 3 and 6"
+        },
+        {
+          "id": "src-sec-3",
+          "title": "Test Data Handbook",
+          "type": "document",
+          "documentId": "doc-test-data-handbook",
+          "excerpt": "Approved synthetic data generation, deterministic seeding and cleanup expectations.",
+          "reference": "v3.4 - Chapter 2"
+        }
+      ],
+      "suggestedQuestions": [
+        "What counts as Restricted data on this project?",
+        "How do I report a suspected data incident?",
+        "When is the production change freeze?"
+      ]
+    },
+    {
+      "id": "resp-onboarding",
+      "intent": "onboarding_plan",
+      "keywords": [
+        "first week",
+        "first day",
+        "onboarding",
+        "get started",
+        "start",
+        "where do i begin",
+        "plan",
+        "priority",
+        "complete first"
+      ],
+      "answer": "Your induction follows the common foundation first, then your role-specific path.\n\nWeek one priority:\n1. Complete Client & Domain so you can use the programme vocabulary in stand-up.\n2. Complete Environment & Access and verify your workstation before picking up delivery work.\n3. Read Application Overview to understand the five bounded contexts and the origination journey.\n4. Complete Security & Guidelines - it is assessed and enforced on this project.\n5. Bookmark anything you want to revisit, then attempt the quiz attached to each module.\n\nYour learning path is six modules for Developers (four common plus two developer modules) and seven for Testers (four common plus three tester modules). Use Continue learning on your dashboard to resume the module you last opened.",
+      "sources": [
+        {
+          "id": "src-onb-1",
+          "title": "Client & Domain",
+          "type": "module",
+          "moduleId": "mod-client-domain",
+          "excerpt": "Establish the shared vocabulary of the programme before your first delivery conversation.",
+          "reference": "Module 1 - Foundation"
+        },
+        {
+          "id": "src-onb-2",
+          "title": "Environment & Access",
+          "type": "module",
+          "moduleId": "mod-environment-access",
+          "excerpt": "Required tools, access-request process and approved setup guidance.",
+          "reference": "Module 2 - Foundation"
+        },
+        {
+          "id": "src-onb-3",
+          "title": "Security & Guidelines",
+          "type": "module",
+          "moduleId": "mod-security-guidelines",
+          "excerpt": "Access procedures, information handling and compliance expectations. Assessed and enforced.",
+          "reference": "Module 4 - Mandatory"
+        }
+      ],
+      "suggestedQuestions": [
+        "What is assessed in the Security & Guidelines quiz?",
+        "How much time should I set aside for the common modules?",
+        "Which modules are specific to my role?"
+      ]
+    },
+    {
+      "id": "resp-branching",
+      "intent": "development_lifecycle",
+      "keywords": [
+        "branch",
+        "git",
+        "pull request",
+        "pr",
+        "review",
+        "commit",
+        "rebase",
+        "merge",
+        "development lifecycle",
+        "logging",
+        "ticket"
+      ],
+      "answer": "The ADB development lifecycle is ticket-driven and deliberately small-batch.\n\n• Branch from develop and name the branch feature/<ticket>-<slug>, for example feature/ADB-1421-case-retry.\n• Rebase onto the latest develop and force-push with lease to your own branch only. Never merge develop into a feature branch and never force-push a shared branch.\n• Keep pull requests under 400 changed lines. Every pull request must reference its ticket, include tests and pass the quality gates before review.\n• Reviewers check correctness, automated test coverage, security and observability. Self-approval is not permitted.\n• Log your work daily in the client-mandated audit trail.\n\nA release is cut from the release branch by the release manager. Feature branches and local machines are never used to produce a release.",
+      "sources": [
+        {
+          "id": "src-dev-1",
+          "title": "Development Lifecycle & Standards",
+          "type": "module",
+          "moduleId": "mod-dev-lifecycle",
+          "excerpt": "Branches are named feature/<ticket>-<slug>. Pull requests stay under 400 changed lines and must include automated tests.",
+          "reference": "Module 5 - Developer path"
+        },
+        {
+          "id": "src-dev-2",
+          "title": "Engineering Standards",
+          "type": "document",
+          "documentId": "doc-engineering-standards",
+          "excerpt": "Branching, review checklist, logging and quality gate definitions.",
+          "reference": "v3.3 - Sections 4-7"
+        },
+        {
+          "id": "src-dev-3",
+          "title": "Pull Request Template",
+          "type": "document",
+          "documentId": "doc-pr-template",
+          "excerpt": "Required ticket reference, test evidence and reviewer checklist.",
+          "reference": "v1.4"
+        }
+      ],
+      "suggestedQuestions": [
+        "What is the maximum pull request size?",
+        "When should I rebase rather than merge?",
+        "What does the review checklist cover?"
+      ]
+    },
+    {
+      "id": "resp-testing",
+      "intent": "testing_practice",
+      "keywords": [
+        "testing",
+        "test strategy",
+        "test data",
+        "test case",
+        "regression",
+        "severity",
+        "priority",
+        "defect",
+        "retest",
+        "uat",
+        "blocked",
+        "evidence",
+        "release validation"
+      ],
+      "answer": "Testing follows the agreed pyramid and the acceptance criteria are the source of truth.\n\n• Target roughly 70% unit, 20% integration and 10% end-to-end coverage. Domain rules and edge cases are tested at unit level; testers own component, contract and system suites.\n• Use the approved synthetic data generator with a deterministic seed. Clean seeded data after each execution window so the next run is reproducible.\n• A Blocked result means an environmental issue prevents execution - raise an environment defect. Never record a blocked test as failed or silently skip it.\n• Severity describes impact; priority describes urgency. A core journey broken with no workaround is Critical.\n• Retest a defect on the same environment and data as the original failure. Close it only when the retest passes and an evidence link is attached.\n• Regression scope is risk-based and documented. Always include the smoke suite and the impacted journey; a release recommendation must state what was and was not tested.",
+      "sources": [
+        {
+          "id": "src-test-1",
+          "title": "Testing Strategy & Design",
+          "type": "module",
+          "moduleId": "mod-testing-strategy",
+          "excerpt": "Acceptance criteria are the source of truth. The target pyramid is 70% unit, 20% integration and 10% end-to-end.",
+          "reference": "Module 7 - Tester path"
+        },
+        {
+          "id": "src-test-2",
+          "title": "Test Data & Execution",
+          "type": "module",
+          "moduleId": "mod-test-data-execution",
+          "excerpt": "Blocked means an environmental issue prevents execution. Retest on the same environment and data as the original failure.",
+          "reference": "Module 8 - Tester path"
+        },
+        {
+          "id": "src-test-3",
+          "title": "Test Strategy Document",
+          "type": "document",
+          "documentId": "doc-test-strategy",
+          "excerpt": "Test levels, environment matrix, entry and exit criteria.",
+          "reference": "v1.2 - Sections 2-5"
+        },
+        {
+          "id": "src-test-4",
+          "title": "Defect Management Guide",
+          "type": "document",
+          "documentId": "doc-defect-guide",
+          "excerpt": "Severity versus priority, evidence standards and defect closure rules.",
+          "reference": "v2.1"
+        }
+      ],
+      "suggestedQuestions": [
+        "What is the difference between severity and priority?",
+        "When is a test result marked Blocked?",
+        "What must a release recommendation include?"
+      ]
+    },
+    {
+      "id": "resp-application",
+      "intent": "application_overview",
+      "keywords": [
+        "application overview",
+        "architecture",
+        "bounded context",
+        "origination",
+        "saga",
+        "ledger",
+        "posting",
+        "integration",
+        "system",
+        "flow",
+        "customer journey",
+        "domain"
+      ],
+      "answer": "The ADB platform is organised into five bounded contexts: Customer, Product, Origination, Servicing and Posting. Each has one owning team and one published contract.\n\nOrigination is the highest-value journey. It is implemented as a saga: each step is a separate, resumable operation that can be compensated if a later step fails. When screening needs manual review, the case pauses with a structured reason code and resumes when a decision is recorded.\n\nThe Posting service is the only component permitted to write to the core ledger; no other context holds ledger credentials. The core banking host remains the system of record for balances - ADB orchestrates and posts through Posting but does not replace the host ledger.\n\nIf a change appears to affect the rules of two bounded contexts, the rule is usually in the wrong place. Raise it in design review rather than duplicating logic.",
+      "sources": [
+        {
+          "id": "src-app-1",
+          "title": "Application Overview",
+          "type": "module",
+          "moduleId": "mod-application-overview",
+          "excerpt": "Five bounded contexts, the origination saga and the Posting service as the only ledger writer.",
+          "reference": "Module 3 - Foundation"
+        },
+        {
+          "id": "src-app-2",
+          "title": "Architecture Overview",
+          "type": "document",
+          "documentId": "doc-architecture-overview",
+          "excerpt": "Context map, integration contracts and the origination saga sequence.",
+          "reference": "v2.4 - Sections 3-4"
+        },
+        {
+          "id": "src-app-3",
+          "title": "Bounded Context Map",
+          "type": "document",
+          "documentId": "doc-context-map",
+          "excerpt": "Team ownership and contract boundaries for the five contexts.",
+          "reference": "v3.0"
+        }
+      ],
+      "suggestedQuestions": [
+        "Why is origination implemented as a saga?",
+        "Which service may write to the core ledger?",
+        "Which context owns customer records?"
+      ]
+    },
+    {
+      "id": "resp-readiness",
+      "intent": "readiness_progress",
+      "keywords": [
+        "readiness",
+        "readiness score",
+        "progress",
+        "completion",
+        "score",
+        "certificate",
+        "how am i doing",
+        "quiz average"
+      ],
+      "answer": "Your readiness score is a weighted view of the evidence you have produced, not just the modules you have opened.\n\nThe composite combines module completion, quiz performance against the pass mark, completion of the mandatory Security & Guidelines assessment, and consistent activity across your assigned path. A score below 40 is Not ready, 40-69 is Building, 70-89 is On track and 90+ is Ready.\n\nTo move your score fastest: finish the in-progress module, attempt the quiz attached to every completed module, and clear the mandatory security assessment. Progress Tracker shows the exact factor breakdown and the next best action.",
+      "sources": [
+        {
+          "id": "src-ready-1",
+          "title": "Security & Guidelines",
+          "type": "module",
+          "moduleId": "mod-security-guidelines",
+          "excerpt": "The mandatory compliance module contributes directly to your readiness score.",
+          "reference": "Module 4 - Readiness contribution",
+          "model": "Readiness model - v1.0"
+        },
+        {
+          "id": "src-ready-2",
+          "title": "Unit Testing & Release Awareness",
+          "type": "module",
+          "moduleId": "mod-unit-testing",
+          "excerpt": "Quality gates require at least 80% unit coverage on changed code.",
+          "reference": "Module 6 - Developer path"
+        }
+      ],
+      "suggestedQuestions": [
+        "Which modules are included in my readiness score?",
+        "What is the pass mark for each quiz?",
+        "What should I do next to improve my readiness?"
+      ]
+    },
+    {
+      "id": "resp-assistant",
+      "intent": "assistant_scope",
+      "keywords": [
+        "assistant",
+        "ai",
+        "source",
+        "citation",
+        "where does the answer come from",
+        "can you",
+        "scope",
+        "approved content",
+        "no answer",
+        "hallucinate"
+      ],
+      "answer": "I answer only from content your manager has approved and published to Project ADB. Every response runs through project and role-aware retrieval before it is written.\n\n• Answers are paired with the module or document they were drawn from - open the Sources panel to inspect the evidence.\n• I will not browse the public web, use unapproved material, or answer general questions outside your induction scope.\n• If the approved content does not contain an answer, I will say so and suggest the right team to ask rather than guessing.\n• Conversations are stored locally in this demo. In a production deployment they would be retained under the project's information-handling policy.",
+      "sources": [
+        {
+          "id": "src-ai-1",
+          "title": "Client & Domain",
+          "type": "module",
+          "moduleId": "mod-client-domain",
+          "excerpt": "If a term is not in the approved glossary, ask the product analyst before making an assumption.",
+          "reference": "Module 1 - Ways of working"
+        },
+        {
+          "id": "src-ai-2",
+          "title": "Information Handling Policy",
+          "type": "document",
+          "documentId": "doc-security-policy",
+          "excerpt": "Approved use of AI tooling and the prohibition on unapproved content sources.",
+          "reference": "v1.1 - Section 5"
+        }
+      ],
+      "suggestedQuestions": [
+        "How do I know an answer is trustworthy?",
+        "What do you do when you cannot answer?",
+        "Are my conversations retained?"
+      ]
+    },
+    {
+      "id": "resp-escalation",
+      "intent": "escalation",
+      "keywords": [
+        "escalate",
+        "who do i ask",
+        "contact",
+        "blocked",
+        "question",
+        "help",
+        "stakeholder",
+        "product analyst",
+        "delivery lead"
+      ],
+      "answer": "Route questions to the owner of the decision, and keep the answer in the shared project channel so the next joiner can find it.\n\n• Business terms and scope: client product owner or the product analyst.\n• Data, access and environment readiness: Meridian delivery lead.\n• Technical standards, reviews and quality gates: HCLTech engineering lead.\n• Induction, enrollment and readiness: your learning program manager.\n• Suspected security incident: the security helpline, within one hour, without self-investigating.\n\nThe weekly sync is for decisions, not for unblocking yourself. Raise blocking questions in the shared channel first.",
+      "sources": [
+        {
+          "id": "src-esc-1",
+          "title": "Client & Domain",
+          "type": "module",
+          "moduleId": "mod-client-domain",
+          "excerpt": "Client product owner owns scope, delivery lead owns environment readiness, engineering lead owns standards.",
+          "reference": "Module 1 - Stakeholders"
+        },
+        {
+          "id": "src-esc-2",
+          "title": "Security & Guidelines",
+          "type": "module",
+          "moduleId": "mod-security-guidelines",
+          "excerpt": "Report a suspected data incident through the security helpline within one hour.",
+          "reference": "Module 4 - Incident reporting"
+        }
+      ],
+      "suggestedQuestions": [
+        "Who owns backlog prioritisation?",
+        "How do I raise an access blocker?",
+        "What is the security incident process?"
+      ]
+    },
+    {
+      "id": "resp-release",
+      "intent": "release_regression",
+      "keywords": [
+        "release",
+        "release readiness",
+        "regression",
+        "smoke",
+        "change freeze",
+        "quality gate",
+        "coverage",
+        "defect fix",
+        "release branch"
+      ],
+      "answer": "Release readiness is evidence-based and always states its residual risk.\n\n• Every defect fix ships with a regression test that would have caught the original failure.\n• The quality gate requires at least 80% unit coverage on changed code and all quality checks green.\n• Regression selection is risk-based: always include the smoke suite and the impacted journey, then add suites that share a service or data with the change and the last three release suites as a baseline.\n• A release is cut from the release branch by the release manager. The production change freeze runs from the last business day of each month.\n• A release recommendation must state what was tested and what was not tested. An unqualified 'ready' is not acceptable.",
+      "sources": [
+        {
+          "id": "src-rel-1",
+          "title": "Defect, Regression & Release Validation",
+          "type": "module",
+          "moduleId": "mod-regression-validation",
+          "excerpt": "Regression scope is risk-based and documented. A release recommendation states what was and was not tested.",
+          "reference": "Module 9 - Tester path"
+        },
+        {
+          "id": "src-rel-2",
+          "title": "Release Runbook",
+          "type": "document",
+          "documentId": "doc-release-runbook",
+          "excerpt": "Release branching, change freeze window and go/no-go evidence.",
+          "reference": "v3.1"
+        },
+        {
+          "id": "src-rel-3",
+          "title": "Release Readiness Checklist",
+          "type": "document",
+          "documentId": "doc-release-checklist",
+          "excerpt": "Quality gates, smoke suite and sign-off record.",
+          "reference": "v3.2"
+        }
+      ],
+      "suggestedQuestions": [
+        "What is the unit coverage quality gate?",
+        "Which suites are always included in regression?",
+        "When does the change freeze apply?"
+      ]
+    }
+  ],
+  "noAnswer": {
+    "answer": "I could not find an answer to that in the approved Project ADB content.\n\nI will not guess. Try rephrasing the question around a module topic, or ask the owner of the decision:\n• Business scope and terminology: the product analyst or client product owner.\n• Data, access and environments: the Meridian delivery lead.\n• Technical standards and releases: the HCLTech engineering lead.\n• Induction and enrollment: your learning program manager.\n\nYou can also browse the Content Library sources listed alongside this answer.",
+    "suggestedQuestions": [
+      "What content is available to me?",
+      "Who should I ask about access?",
+      "What should I complete in my first week?"
+    ]
+  }
+}

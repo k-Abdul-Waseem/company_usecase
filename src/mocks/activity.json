@@ -1,0 +1,112 @@
+{
+  "events": [
+    {
+      "id": "act-001",
+      "actor": "Priya Menon",
+      "actorRole": "Learning Program Manager",
+      "action": "enrolled",
+      "target": "Nikhil Gupta into Project ADB",
+      "occurredAt": "2026-10-22T08:42:00.000Z",
+      "kind": "enrollment"
+    },
+    {
+      "id": "act-002",
+      "actor": "Lokesh Iyer",
+      "actorRole": "Developer",
+      "action": "completed module",
+      "target": "Application Overview",
+      "occurredAt": "2026-10-22T07:15:00.000Z",
+      "kind": "module"
+    },
+    {
+      "id": "act-003",
+      "actor": "Ananya Rao",
+      "actorRole": "Tester",
+      "action": "passed quiz",
+      "target": "Testing Strategy & Design with 92%",
+      "occurredAt": "2026-10-21T16:28:00.000Z",
+      "kind": "quiz"
+    },
+    {
+      "id": "act-004",
+      "actor": "Rahul Verma",
+      "actorRole": "Program Director",
+      "action": "published content",
+      "target": "ATLAS Sprint Playbook v3.1",
+      "occurredAt": "2026-10-21T13:05:00.000Z",
+      "kind": "content"
+    },
+    {
+      "id": "act-005",
+      "actor": "Karthik Nair",
+      "actorRole": "Developer",
+      "action": "scored 88% on",
+      "target": "Client & Domain assessment",
+      "occurredAt": "2026-10-21T11:47:00.000Z",
+      "kind": "quiz"
+    },
+    {
+      "id": "act-006",
+      "actor": "Priya Menon",
+      "actorRole": "Learning Program Manager",
+      "action": "updated enrolment for",
+      "target": "Imran Shaikh — role changed to Developer",
+      "occurredAt": "2026-10-20T15:30:00.000Z",
+      "kind": "enrollment"
+    },
+    {
+      "id": "act-007",
+      "actor": "Sneha Kulkarni",
+      "actorRole": "Tester",
+      "action": "completed module",
+      "target": "Environment & Access",
+      "occurredAt": "2026-10-20T09:12:00.000Z",
+      "kind": "module"
+    },
+    {
+      "id": "act-008",
+      "actor": "Priya Menon",
+      "actorRole": "Learning Program Manager",
+      "action": "exported the readiness report for",
+      "target": "Project ADB",
+      "occurredAt": "2026-10-19T17:55:00.000Z",
+      "kind": "report"
+    },
+    {
+      "id": "act-009",
+      "actor": "Imran Shaikh",
+      "actorRole": "Developer",
+      "action": "started module",
+      "target": "Environment & Access",
+      "occurredAt": "2026-10-19T10:03:00.000Z",
+      "kind": "module"
+    },
+    {
+      "id": "act-010",
+      "actor": "Divya Menon",
+      "actorRole": "Tester",
+      "action": "flagged content for review:",
+      "target": "Test Data & Execution v1.4",
+      "occurredAt": "2026-10-18T12:20:00.000Z",
+      "kind": "content"
+    },
+    {
+      "id": "act-011",
+      "actor": "Ananya Rao",
+      "actorRole": "Tester",
+      "action": "completed module",
+      "target": "Client & Domain",
+      "occurredAt": "2026-10-18T08:45:00.000Z",
+      "kind": "module"
+    },
+    {
+      "id": "act-012",
+      "actor": "Priya Menon",
+      "actorRole": "Learning Program Manager",
+      "action": "enrolled",
+      "target": "Meera Joshi into Project NIMBUS",
+      "occurredAt": "2026-10-17T14:10:00.000Z",
+      "kind": "enrollment"
+    }
+  ]
+}

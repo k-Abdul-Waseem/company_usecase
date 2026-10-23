@@ -1,0 +1,58 @@
+{
+  "notifications": [
+    {
+      "id": "notif-1",
+      "title": "Security & Guidelines assessment due",
+      "description": "Your mandatory compliance assessment is due within 3 days.",
+      "occurredAt": "2026-10-22T08:30:00.000Z",
+      "type": "deadline",
+      "href": "/quiz-center/quiz-security-guidelines",
+      "audience": "learner"
+    },
+    {
+      "id": "notif-2",
+      "title": "New content indexed",
+      "description": "Test Data Handbook v3.4 is now available and indexed for the assistant.",
+      "occurredAt": "2026-10-22T07:10:00.000Z",
+      "type": "content",
+      "href": "/content-library",
+      "audience": "manager"
+    },
+    {
+      "id": "notif-3",
+      "title": "Nikhil Gupta enrolled",
+      "description": "Enrollment for Project ADB is pending learner activation.",
+      "occurredAt": "2026-10-22T06:42:00.000Z",
+      "type": "enrollment",
+      "href": "/enrollment",
+      "audience": "manager"
+    },
+    {
+      "id": "notif-4",
+      "title": "Quiz available: Application Overview",
+      "description": "You completed the module. The 5-question check is ready.",
+      "occurredAt": "2026-10-21T16:20:00.000Z",
+      "type": "quiz",
+      "href": "/quiz-center/quiz-application-overview",
+      "audience": "learner"
+    },
+    {
+      "id": "notif-5",
+      "title": "Readiness report exported",
+      "description": "The Project ADB readiness report was exported by Priya Menon.",
+      "occurredAt": "2026-10-21T15:05:00.000Z",
+      "type": "report",
+      "href": "/reports",
+      "audience": "manager"
+    },
+    {
+      "id": "notif-6",
+      "title": "Welcome to Project ADB",
+      "description": "Your role-aware induction path is ready. Start with Client & Domain.",
+      "occurredAt": "2026-10-20T09:00:00.000Z",
+      "type": "info",
+      "href": "/learning-modules",
+      "audience": "learner"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "overview": {
+    "totalLearners": 96,
+    "activeLearners": 78,
+    "completionRate": 62.4,
+    "averageQuizScore": 84.6,
+    "readinessRate": 57.3,
+    "averageTimeToReadinessDays": 9.4,
+    "totalDocuments": 42
+  },
+  "departmentProgress": [
+    {
+      "department": "Retail Banking",
+      "learners": 24,
+      "completed": 17,
+      "inProgress": 5,
+      "notStarted": 2,
+      "completionRate": 70.8,
+      "averageScore": 87.2
+    },
+    {
+      "department": "Quality Engineering",
+      "learners": 21,
+      "completed": 14,
+      "inProgress": 4,
+      "notStarted": 3,
+      "completionRate": 66.7,
+      "averageScore": 85.4
+    },
+    {
+      "department": "Payments",
+      "learners": 16,
+      "completed": 9,
+      "inProgress": 4,
+      "notStarted": 3,
+      "completionRate": 56.3,
+      "averageScore": 81.9
+    },
+    {
+      "department": "Retail Technology",
+      "learners": 14,
+      "completed": 8,
+      "inProgress": 3,
+      "notStarted": 3,
+      "completionRate": 57.1,
+      "averageScore": 83.1
+    },
+    {
+      "department": "Logistics Technology",
+      "learners": 11,
+      "completed": 5,
+      "inProgress": 3,
+      "notStarted": 3,
+      "completionRate": 45.5,
+      "averageScore": 78.6
+    },
+    {
+      "department": "Program Delivery",
+      "learners": 10,
+      "completed": 6,
+      "inProgress": 2,
+      "notStarted": 2,
+      "completionRate": 60,
+      "averageScore": 86
+    }
+  ],
+  "quizTrends": [
+    {
+      "label": "Sep 22",
+      "value": 76.4,
+      "secondaryValue": 68
+    },
+    {
+      "label": "Sep 24",
+      "value": 78.1,
+      "secondaryValue": 71
+    },
+    {
+      "label": "Sep 26",
+      "value": 79.6,
+      "secondaryValue": 70
+    },
+    {
+      "label": "Sep 28",
+      "value": 78.9,
+      "secondaryValue": 74
+    },
+    {
+      "label": "Sep 30",
+      "value": 81.2,
+      "secondaryValue": 76
+    },
+    {
+      "label": "Oct 02",
+      "value": 82.5,
+      "secondaryValue": 78
+    },
+    {
+      "label": "Oct 06",
+      "value": 81.8,
+      "secondaryValue": 77
+    },
+    {
+      "label": "Oct 08",
+      "value": 83.9,
+      "secondaryValue": 80
+    },
+    {
+      "label": "Oct 12",
+      "value": 84.7,
+      "secondaryValue": 82
+    },
+    {
+      "label": "Oct 15",
+      "value": 83.6,
+      "secondaryValue": 79
+    },
+    {
+      "label": "Oct 19",
+      "value": 85.2,
+      "secondaryValue": 83
+    },
+    {
+      "label": "Oct 22",
+      "value": 84.6,
+      "secondaryValue": 81
+    }
+  ],
+  "engagement": [
+    {
+      "id": "eng-weekly",
+      "label": "Weekly active learners",
+      "value": 81,
+      "unit": "percent",
+      "change": 6.2,
+      "description": "Learners who opened at least one module this week"
+    },
+    {
+      "id": "eng-assistant",
+      "label": "Assistant questions asked",
+      "value": 412,
+      "unit": "count",
+      "change": 18.4,
+      "description": "Grounded questions asked in the last 30 days"
+    },
+    {
+      "id": "eng-source",
+      "label": "Answers with a source",
+      "value": 100,
+      "unit": "percent",
+      "change": 0,
+      "description": "Every assistant answer cites approved content"
+    },
+    {
+      "id": "eng-duration",
+      "label": "Avg. session length",
+      "value": 22,
+      "unit": "minutes",
+      "change": 4.1,
+      "description": "Mean active learning time per session"
+    },
+    {
+      "id": "eng-completion",
+      "label": "Module completion rate",
+      "value": 68,
+      "unit": "percent",
+      "change": 3.8,
+      "description": "Modules completed within seven days of starting"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p-adb",
+      "name": "Project ADB",
+      "code": "ADB",
+      "client": "Meridian Financial Services",
+      "learners": 48,
+      "completionRate": 68.8,
+      "averageScore": 87.1,
+      "riskLevel": "low",
+      "startDate": "2026-01-06T00:00:00.000Z"
+    },
+    {
+      "id": "p-atlas",
+      "name": "Project ATLAS",
+      "code": "ATLAS",
+      "client": "Helix Retail Group",
+      "learners": 31,
+      "completionRate": 54.8,
+      "averageScore": 82.4,
+      "riskLevel": "medium",
+      "startDate": "2026-02-02T00:00:00.000Z"
+    },
+    {
+      "id": "p-nimbus",
+      "name": "Project NIMBUS",
+      "code": "NIMBUS",
+      "client": "Vertex Logistics",
+      "learners": 17,
+      "completionRate": 38.2,
+      "averageScore": 76.9,
+      "riskLevel": "high",
+      "startDate": "2026-03-02T00:00:00.000Z"
+    }
+  ]
+}

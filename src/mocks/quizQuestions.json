@@ -1,0 +1,687 @@
+{
+  "questions": [
+    {
+      "id": "q-cd-1",
+      "quizId": "quiz-client-domain",
+      "prompt": "What is the primary business outcome Project ADB is expected to deliver?",
+      "topic": "Programme objectives",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Replace four legacy servicing systems with one core platform and cut onboarding from nine days to two" },
+        { "id": "b", "text": "Migrate all customer data to a public cloud provider within one quarter" },
+        { "id": "c", "text": "Retire the client's relationship manager network" },
+        { "id": "d", "text": "Build a standalone mobile app with no integration to the core" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The agreed programme objective is consolidation of four legacy systems into a single core platform, reducing new-customer onboarding from nine days to two. The other options are not part of the agreed scope."
+    },
+    {
+      "id": "q-cd-2",
+      "quizId": "quiz-client-domain",
+      "prompt": "In ADB terminology, what does 'origination' refer to?",
+      "topic": "Domain vocabulary",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "The nightly reconciliation between the ledger and the core host" },
+        { "id": "b", "text": "The journey that creates a new customer record and product holding" },
+        { "id": "c", "text": "A post-sale change to an existing customer record" },
+        { "id": "d", "text": "The process of archiving closed accounts" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Origination is the new-business journey — it creates the customer record and the product holding. Post-sale changes are servicing, not origination."
+    },
+    {
+      "id": "q-cd-3",
+      "quizId": "quiz-client-domain",
+      "prompt": "Who owns the decision on data, access and environment readiness?",
+      "topic": "Stakeholders",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "The HCLTech engineering lead" },
+        { "id": "b", "text": "The client product owner" },
+        { "id": "c", "text": "The Meridian delivery lead" },
+        { "id": "d", "text": "The learning program manager" }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Meridian delivery lead owns data, access and environment readiness. The product owner owns scope and acceptance, while the HCLTech engineering lead owns technical standards and quality gates."
+    },
+    {
+      "id": "q-cd-4",
+      "quizId": "quiz-client-domain",
+      "prompt": "A question about a business term is blocking your task. What is the expected first step?",
+      "topic": "Ways of working",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Make a reasonable assumption and continue quietly" },
+        { "id": "b", "text": "Raise it in the shared project channel so the answer is searchable" },
+        { "id": "c", "text": "Wait for the next weekly sync to raise it" },
+        { "id": "d", "text": "Email the client directly" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Domain questions belong in the shared project channel, where the answer is searchable and reusable by the next joiner. Do not block on the weekly sync, and never assume silently."
+    },
+    {
+      "id": "q-cd-5",
+      "quizId": "quiz-client-domain",
+      "prompt": "Which stakeholder group owns backlog prioritisation?",
+      "topic": "Stakeholders",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "The client product owner" },
+        { "id": "b", "text": "The QA squad" },
+        { "id": "c", "text": "The learning program manager" },
+        { "id": "d", "text": "The release manager" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The client product owner owns scope and therefore backlog prioritisation. The QA squad owns regression execution and the release manager coordinates the release cut."
+    },
+
+    {
+      "id": "q-ea-1",
+      "quizId": "quiz-environment-access",
+      "prompt": "How is access provisioned on this project?",
+      "topic": "Access provisioning",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "By individual request for each system you need" },
+        { "id": "b", "text": "By role-based bundle, matched to your learning role" },
+        { "id": "c", "text": "Automatically on your first login, for all environments" },
+        { "id": "d", "text": "By asking a teammate to share their credentials" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Access is granted as a bundle matched to your learning role (developer, tester or lead). Individual per-system requests and credential sharing are both prohibited."
+    },
+    {
+      "id": "q-ea-2",
+      "quizId": "quiz-environment-access",
+      "prompt": "What is the correct response to a certificate trust error on the internal registry?",
+      "topic": "Troubleshooting",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Disable TLS verification for the registry" },
+        { "id": "b", "text": "Re-import the corporate root certificate and restart the terminal" },
+        { "id": "c", "text": "Add the registry to your browser exceptions" },
+        { "id": "d", "text": "Clone the repository over a personal hotspot instead" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The correct fix is to re-import the corporate root certificate and restart the terminal. Disabling TLS verification or using a personal network breaches the information handling policy."
+    },
+    {
+      "id": "q-ea-3",
+      "quizId": "quiz-environment-access",
+      "prompt": "You receive a repository permission denied error on your first clone. What should you do?",
+      "topic": "Access provisioning",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Fork the repository into your personal account" },
+        { "id": "b", "text": "Request the role bundle for your learning role" },
+        { "id": "c", "text": "Ask a colleague to push on your behalf" },
+        { "id": "d", "text": "Use a personal access token from another project" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Repository access is granted as part of the role bundle, not as an individual repository permission. Forking client code to a personal account is a policy breach."
+    },
+    {
+      "id": "q-ea-4",
+      "quizId": "quiz-environment-access",
+      "prompt": "Which of these is NOT an approved part of workstation setup?",
+      "topic": "Setup standards",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Joining the HCLTech domain and completing multi-factor enrolment" },
+        { "id": "b", "text": "Installing the pinned engineering baseline from the software portal" },
+        { "id": "c", "text": "Upgrading the local JDK to the newest release from the public vendor site" },
+        { "id": "d", "text": "Running the standard environment verification script" }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Locally upgrading a toolchain outside the pinned baseline is not approved — your environment must match the build agents. Use the pinned installer if a version is missing."
+    },
+    {
+      "id": "q-ea-5",
+      "quizId": "quiz-environment-access",
+      "prompt": "Where must the access request template be raised?",
+      "topic": "Access provisioning",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Through the service desk, with manager approval" },
+        { "id": "b", "text": "In the project team chat" },
+        { "id": "c", "text": "With the client product owner" },
+        { "id": "d", "text": "By email to the IT director" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Access requests are raised through the service desk using the template for your learning role. Your manager approves the business justification and IT fulfils the request."
+    },
+
+    {
+      "id": "q-ao-1",
+      "quizId": "quiz-application-overview",
+      "prompt": "How many bounded contexts make up the ADB platform?",
+      "topic": "Architecture",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Three" },
+        { "id": "b", "text": "Four" },
+        { "id": "c", "text": "Five" },
+        { "id": "d", "text": "Seven" }
+      ],
+      "correctOptionId": "c",
+      "explanation": "There are five bounded contexts: Customer, Product, Origination, Servicing and Posting, each with one owning team and one clear contract."
+    },
+    {
+      "id": "q-ao-2",
+      "quizId": "quiz-application-overview",
+      "prompt": "Why is origination described as a saga?",
+      "topic": "Journey orchestration",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Because it is a single atomic database transaction" },
+        { "id": "b", "text": "Because each step is a separate, resumable operation that can be compensated" },
+        { "id": "c", "text": "Because it always completes synchronously in one call" },
+        { "id": "d", "text": "Because it never pauses for manual review" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Origination is a saga: each step is a separate, resumable operation. When a step such as screening needs review, the case pauses with a structured reason code and can resume or compensate."
+    },
+    {
+      "id": "q-ao-3",
+      "quizId": "quiz-application-overview",
+      "prompt": "Which component is the only one permitted to write to the core ledger?",
+      "topic": "Integration boundaries",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "The Customer context" },
+        { "id": "b", "text": "The Origination context" },
+        { "id": "c", "text": "The Posting service" },
+        { "id": "d", "text": "The reporting data mart" }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Posting service is the only component holding ledger credentials. All movement flows through it — no other context writes to the core ledger directly."
+    },
+    {
+      "id": "q-ao-4",
+      "quizId": "quiz-application-overview",
+      "prompt": "A change appears to affect the rules of two bounded contexts. What does that usually indicate?",
+      "topic": "Design discipline",
+      "difficulty": "advanced",
+      "options": [
+        { "id": "a", "text": "The rule is in the wrong place and should be raised in design review" },
+        { "id": "b", "text": "The logic should be duplicated in both contexts" },
+        { "id": "c", "text": "The contexts should be merged immediately" },
+        { "id": "d", "text": "The change should be implemented in the UI layer instead" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Business rules belong to exactly one context. If a change appears to affect two, the rule is usually in the wrong place — raise it in design review rather than duplicating logic."
+    },
+    {
+      "id": "q-ao-5",
+      "quizId": "quiz-application-overview",
+      "prompt": "Which system remains the system of record for balances?",
+      "topic": "Integration boundaries",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "The client CRM" },
+        { "id": "b", "text": "The core banking host" },
+        { "id": "c", "text": "The document generation service" },
+        { "id": "d", "text": "The screening service" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The core banking host remains the system of record for balances. The ADB platform orchestrates and posts through the Posting service but does not replace the host ledger."
+    },
+
+    {
+      "id": "q-sg-1",
+      "quizId": "quiz-security-guidelines",
+      "prompt": "Where may Restricted data such as customer identity documents be handled?",
+      "topic": "Information handling",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "In approved environments only, with no local copy" },
+        { "id": "b", "text": "On your corporate laptop, if the disk is encrypted" },
+        { "id": "c", "text": "In a personal cloud drive, if the folder is private" },
+        { "id": "d", "text": "In a personal AI assistant, if you remove the names" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Restricted data is handled only in approved environments with no local copy. Encryption on a laptop does not make a local copy permissible, and personal cloud or AI tools are prohibited."
+    },
+    {
+      "id": "q-sg-2",
+      "quizId": "quiz-security-guidelines",
+      "prompt": "You suspect you have exposed client data to an unintended recipient. What is the first thing you do?",
+      "topic": "Incident reporting",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Investigate the scope yourself before reporting" },
+        { "id": "b", "text": "Delete the message or file to limit exposure" },
+        { "id": "c", "text": "Stop the activity, secure the data and report within one hour" },
+        { "id": "d", "text": "Wait to see whether anyone notices" }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Stop the activity, secure the data you are working with, and report through the security helpline within one hour. Do not self-investigate and do not delete evidence."
+    },
+    {
+      "id": "q-sg-3",
+      "quizId": "quiz-security-guidelines",
+      "prompt": "Which statement about production database access is correct?",
+      "topic": "Project restrictions",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Direct access is allowed if you use a read-only account" },
+        { "id": "b", "text": "Direct access is prohibited; use the approved servicing tools" },
+        { "id": "c", "text": "Direct access is allowed during the change freeze only" },
+        { "id": "d", "text": "Direct access is allowed with verbal approval from a teammate" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Direct production database access is prohibited regardless of the account's privileges. Use the approved servicing tools, which are audited."
+    },
+    {
+      "id": "q-sg-4",
+      "quizId": "quiz-security-guidelines",
+      "prompt": "Which of these is an approved use of client data in a non-production environment?",
+      "topic": "Information handling",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Copying a production customer record so the test is realistic" },
+        { "id": "b", "text": "Using synthetic data generated with the approved generator" },
+        { "id": "c", "text": "Screenshotting production and attaching it to the ticket" },
+        { "id": "d", "text": "Exporting a production table into a spreadsheet" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Test environments use synthetic or masked data only. All test data is generated with the approved synthetic data generator, never copied from production."
+    },
+    {
+      "id": "q-sg-5",
+      "quizId": "quiz-security-guidelines",
+      "prompt": "When does the production change freeze apply?",
+      "topic": "Project restrictions",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Every Friday afternoon" },
+        { "id": "b", "text": "From the last business day of each month" },
+        { "id": "c", "text": "During the client's financial year end only" },
+        { "id": "d", "text": "There is no change freeze on this programme" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The production change freeze runs from the last business day of each month. Releases are planned around this window."
+    },
+
+    {
+      "id": "q-dl-1",
+      "quizId": "quiz-dev-lifecycle",
+      "prompt": "What is the correct branch naming convention?",
+      "topic": "Branching",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "feature/<ticket>-<slug>" },
+        { "id": "b", "text": "yourname/<date>" },
+        { "id": "c", "text": "<ticket>/develop" },
+        { "id": "d", "text": "hotfix-<slug>-final-v2" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Branches are named feature/<ticket>-<slug>, for example feature/ADB-1421-case-retry. Names must reference the ticket so the change is traceable."
+    },
+    {
+      "id": "q-dl-2",
+      "quizId": "quiz-dev-lifecycle",
+      "prompt": "How should your feature branch stay current with develop?",
+      "topic": "Branching",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Merge develop into your branch daily" },
+        { "id": "b", "text": "Rebase onto the latest develop" },
+        { "id": "c", "text": "Never update it until the pull request is approved" },
+        { "id": "d", "text": "Create a fresh branch from main every day" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Rebase your feature branch onto the latest develop and force-push with lease to your own branch. Never merge develop into the branch, and never force-push to shared branches."
+    },
+    {
+      "id": "q-dl-3",
+      "quizId": "quiz-dev-lifecycle",
+      "prompt": "What is the recommended maximum size for a pull request?",
+      "topic": "Pull requests",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "100 changed lines" },
+        { "id": "b", "text": "400 changed lines" },
+        { "id": "c", "text": "1,500 changed lines" },
+        { "id": "d", "text": "There is no limit" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Keep pull requests under 400 changed lines. Smaller pull requests are reviewed faster, reviewed more thoroughly and are easier to revert if needed."
+    },
+    {
+      "id": "q-dl-4",
+      "quizId": "quiz-dev-lifecycle",
+      "prompt": "Which of these is part of the review checklist?",
+      "topic": "Reviews",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Whether the author has written enough comments" },
+        { "id": "b", "text": "Whether the new behaviour is covered by an automated test" },
+        { "id": "c", "text": "Whether the change is large enough to be significant" },
+        { "id": "d", "text": "Whether the author has signed off their own pull request" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The checklist covers correctness, tests, security and observability. A reviewer must confirm the new behaviour is covered by an automated test."
+    },
+    {
+      "id": "q-dl-5",
+      "quizId": "quiz-dev-lifecycle",
+      "prompt": "Why is daily logging mandatory?",
+      "topic": "Logging",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "It is the client-mandated audit trail" },
+        { "id": "b", "text": "It is used for individual performance ranking" },
+        { "id": "c", "text": "It replaces the need for pull request reviews" },
+        { "id": "d", "text": "It helps the team plan the social calendar" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Daily logging is the client-mandated audit trail for the engagement. It is not used for performance ranking and does not replace review."
+    },
+
+    {
+      "id": "q-ut-1",
+      "quizId": "quiz-unit-testing",
+      "prompt": "Which statement describes a well-written unit test?",
+      "topic": "Test design",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "It asserts on internal fields and log output" },
+        { "id": "b", "text": "It asserts an observable business outcome through the public interface" },
+        { "id": "c", "text": "It depends on execution order and calls the network for realism" },
+        { "id": "d", "text": "It covers several behaviours so the suite runs faster" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A unit test asserts an observable business outcome through the public interface. It never depends on network calls, sleeps, execution order or internal implementation details."
+    },
+    {
+      "id": "q-ut-2",
+      "quizId": "quiz-unit-testing",
+      "prompt": "What must accompany every defect fix?",
+      "topic": "Defect verification",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "A changelog entry only" },
+        { "id": "b", "text": "A test that reproduces the original failure" },
+        { "id": "c", "text": "A new feature branch for the next release" },
+        { "id": "d", "text": "A written apology to the QA squad" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Every defect fix ships with a regression test that would have caught the original failure. A hotfix without a regression test will be re-broken by a later release."
+    },
+    {
+      "id": "q-ut-3",
+      "quizId": "quiz-unit-testing",
+      "prompt": "What is the minimum unit coverage expected on changed code?",
+      "topic": "Quality gates",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "50%" },
+        { "id": "b", "text": "60%" },
+        { "id": "c", "text": "80%" },
+        { "id": "d", "text": "100% in every case" }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The gate requires at least 80% unit coverage on changed code. Coverage is a floor, not a goal — boundary cases matter more than the percentage."
+    },
+    {
+      "id": "q-ut-4",
+      "quizId": "quiz-unit-testing",
+      "prompt": "Where is a release cut from?",
+      "topic": "Release",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "The feature branch with the most recent commit" },
+        { "id": "b", "text": "The release branch" },
+        { "id": "c", "text": "A developer's local machine" },
+        { "id": "d", "text": "The main branch, without review" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A release is cut from the release branch by the release manager. Feature branches and local machines are never used to produce a release."
+    },
+    {
+      "id": "q-ut-5",
+      "quizId": "quiz-unit-testing",
+      "prompt": "A failing test reveals a bug. What is the recommended debugging sequence?",
+      "topic": "Debugging",
+      "difficulty": "advanced",
+      "options": [
+        { "id": "a", "text": "Fix the symptom in production and add a test later" },
+        { "id": "b", "text": "Reproduce with the smallest input, write a failing test, fix the cause" },
+        { "id": "c", "text": "Disable the failing test and raise a ticket" },
+        { "id": "d", "text": "Rewrite the module before investigating" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Reproduce with the smallest possible input, capture it in a failing test, then fix the cause rather than the symptom. This keeps the fix verifiable and prevents regression."
+    },
+
+    {
+      "id": "q-ts-1",
+      "quizId": "quiz-testing-strategy",
+      "prompt": "What is the team's target test pyramid ratio?",
+      "topic": "Test strategy",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "70% unit, 20% integration, 10% end-to-end" },
+        { "id": "b", "text": "10% unit, 20% integration, 70% end-to-end" },
+        { "id": "c", "text": "50% unit, 0% integration, 50% end-to-end" },
+        { "id": "d", "text": "100% end-to-end so nothing is missed" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The target is roughly 70% unit, 20% integration and 10% end-to-end. An inverted pyramid is slow, flaky and cannot sustain a two-week release cadence."
+    },
+    {
+      "id": "q-ts-2",
+      "quizId": "quiz-testing-strategy",
+      "prompt": "Which environment uses masked, client-owned data for acceptance?",
+      "topic": "Environments",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Local" },
+        { "id": "b", "text": "Integration" },
+        { "id": "c", "text": "UAT" },
+        { "id": "d", "text": "System test" }
+      ],
+      "correctOptionId": "c",
+      "explanation": "UAT uses masked, client-owned data and is where client acceptance happens. System test uses masked seeded data owned by the delivery team."
+    },
+    {
+      "id": "q-ts-3",
+      "quizId": "quiz-testing-strategy",
+      "prompt": "What is the source of truth for test design?",
+      "topic": "Test design",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "The acceptance criteria" },
+        { "id": "b", "text": "The developer's implementation" },
+        { "id": "c", "text": "The previous release's test cases" },
+        { "id": "d", "text": "The client's verbal description in stand-up" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Acceptance criteria are the source of truth. Writing tests against the implementation tends to encode the same misunderstanding the implementation contains."
+    },
+    {
+      "id": "q-ts-4",
+      "quizId": "quiz-testing-strategy",
+      "prompt": "An exception path in the requirements has no specified behaviour. What should you do?",
+      "topic": "Test design",
+      "difficulty": "advanced",
+      "options": [
+        { "id": "a", "text": "Skip it — it is not in scope" },
+        { "id": "b", "text": "Raise it with the product analyst as a design gap and design a negative case" },
+        { "id": "c", "text": "Test whatever the implementation happens to do" },
+        { "id": "d", "text": "Mark it as blocked and move on" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An unspecified exception is a design gap, not a testing inconvenience. Raise it with the product analyst and design an explicit negative case — exception paths without tests are uncovered risks."
+    },
+    {
+      "id": "q-ts-5",
+      "quizId": "quiz-testing-strategy",
+      "prompt": "At which level are domain rules and edge cases primarily tested?",
+      "topic": "Test levels",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Unit" },
+        { "id": "b", "text": "System" },
+        { "id": "c", "text": "UAT" },
+        { "id": "d", "text": "Contract" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Domain rules and edge cases are tested at unit level, owned by the developer. Testers own component, contract and system level suites."
+    },
+
+    {
+      "id": "q-td-1",
+      "quizId": "quiz-test-data-execution",
+      "prompt": "How is test data created on this project?",
+      "topic": "Test data",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "By copying production records and anonymising the names" },
+        { "id": "b", "text": "With the approved synthetic data generator, using a deterministic seed" },
+        { "id": "c", "text": "By asking the client to export a sample" },
+        { "id": "d", "text": "By hand-entering data with no record of the seed" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Test data is generated synthetically with the approved generator and a deterministic seed so failures are reproducible. Production data is never copied, even when anonymised by hand."
+    },
+    {
+      "id": "q-td-2",
+      "quizId": "quiz-test-data-execution",
+      "prompt": "What does a 'Blocked' test result mean?",
+      "topic": "Execution",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "The application returned an incorrect result" },
+        { "id": "b", "text": "An environmental issue prevents execution" },
+        { "id": "c", "text": "The tester did not have time to run the case" },
+        { "id": "d", "text": "The case is not applicable this cycle" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Blocked means an environmental issue prevents execution. It is raised as an environment defect and must never be marked as failed or silently skipped."
+    },
+    {
+      "id": "q-td-3",
+      "quizId": "quiz-test-data-execution",
+      "prompt": "What is required before a defect can be closed?",
+      "topic": "Retesting",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "A verbal confirmation from the developer" },
+        { "id": "b", "text": "A passing retest and an attached evidence link" },
+        { "id": "c", "text": "A new test case added to the suite" },
+        { "id": "d", "text": "Client sign-off on the release" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A defect is closed only when the retest passes and the evidence link is attached. If the fix is incomplete, reopen the same defect rather than raising a new one."
+    },
+    {
+      "id": "q-td-4",
+      "quizId": "quiz-test-data-execution",
+      "prompt": "On which environment should a defect fix be retested?",
+      "topic": "Retesting",
+      "difficulty": "advanced",
+      "options": [
+        { "id": "a", "text": "Any environment that is currently available" },
+        { "id": "b", "text": "The same environment and data as the original failure" },
+        { "id": "c", "text": "Production, to be certain" },
+        { "id": "d", "text": "A local environment with hand-crafted data" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Retest on the same environment and data as the original failure. Retesting elsewhere frequently produces a false pass and returns a real defect to the release."
+    },
+    {
+      "id": "q-td-5",
+      "quizId": "quiz-test-data-execution",
+      "prompt": "Why must seeded test data be cleaned up after an execution window?",
+      "topic": "Test data",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "To keep the environment deterministic for the next run" },
+        { "id": "b", "text": "Because the generator licence expires daily" },
+        { "id": "c", "text": "To reduce the size of the evidence archive" },
+        { "id": "d", "text": "Because the client requires a weekly screenshot" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Leaving seeded data behind makes the next run non-deterministic and produces failures that cannot be reproduced. Cleanup keeps the environment trustworthy."
+    },
+
+    {
+      "id": "q-rv-1",
+      "quizId": "quiz-regression-validation",
+      "prompt": "What is the difference between severity and priority?",
+      "topic": "Defect management",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Severity is urgency; priority is impact" },
+        { "id": "b", "text": "Severity is impact; priority is urgency" },
+        { "id": "c", "text": "They are interchangeable on this project" },
+        { "id": "d", "text": "Severity is set by the client; priority by the tester" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Severity describes the impact on the system, while priority describes the urgency of fixing it. A Minor cosmetic issue on a customer-facing journey can be higher priority than a Major issue in an internal tool."
+    },
+    {
+      "id": "q-rv-2",
+      "quizId": "quiz-regression-validation",
+      "prompt": "A core journey is completely broken with no workaround. What severity applies?",
+      "topic": "Defect management",
+      "difficulty": "easy",
+      "options": [
+        { "id": "a", "text": "Blocker" },
+        { "id": "b", "text": "Critical" },
+        { "id": "c", "text": "Major" },
+        { "id": "d", "text": "Minor" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A core journey broken with no workaround is Critical. Blocker is reserved for the system being unusable or data being at risk."
+    },
+    {
+      "id": "q-rv-3",
+      "quizId": "quiz-regression-validation",
+      "prompt": "How should regression scope be selected?",
+      "topic": "Regression",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "Always run the entire suite regardless of the change" },
+        { "id": "b", "text": "Risk-based, documented with the rationale" },
+        { "id": "c", "text": "Only the exact journey that changed" },
+        { "id": "d", "text": "Whichever suites ran in the previous release" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Regression selection is risk-based and documented. Always running the full suite is slower, and a suite that always runs eventually gets skipped under pressure."
+    },
+    {
+      "id": "q-rv-4",
+      "quizId": "quiz-regression-validation",
+      "prompt": "What must a release recommendation always state?",
+      "topic": "Release validation",
+      "difficulty": "advanced",
+      "options": [
+        { "id": "a", "text": "That all defects are fixed" },
+        { "id": "b", "text": "What was tested and what was not tested" },
+        { "id": "c", "text": "The name of the release manager" },
+        { "id": "d", "text": "The number of test cases in the suite" }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A release recommendation always states what was and was not tested. An unqualified 'ready' is not acceptable because it hides residual risk from the decision-maker."
+    },
+    {
+      "id": "q-rv-5",
+      "quizId": "quiz-regression-validation",
+      "prompt": "Which suites are always included in regression selection?",
+      "topic": "Regression",
+      "difficulty": "moderate",
+      "options": [
+        { "id": "a", "text": "The smoke suite and the impacted journey" },
+        { "id": "b", "text": "Only the smoke suite" },
+        { "id": "c", "text": "Every suite in the repository" },
+        { "id": "d", "text": "The performance suite only" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Always include the smoke suite and the impacted journey, then add suites sharing a service or data with the change, plus the last three release suites as a baseline."
+    }
+  ]
+}

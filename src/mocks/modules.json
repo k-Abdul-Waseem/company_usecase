@@ -1,0 +1,1050 @@
+{
+  "modules": [
+    {
+      "id": "mod-client-domain",
+      "slug": "client-and-domain",
+      "title": "Client & Domain",
+      "summary": "Business context, terminology, stakeholders and project objectives for Project ADB.",
+      "description": "Establish the shared vocabulary of the programme so that every conversation with the client, the product owner and the delivery team starts from the same understanding of the domain.",
+      "category": "common",
+      "level": 1,
+      "order": 1,
+      "durationMinutes": 35,
+      "icon": "building-2",
+      "objectives": [
+        "Describe the business problem Project ADB addresses",
+        "Explain the core banking domain vocabulary used daily",
+        "Identify the key stakeholders and their decision rights",
+        "State the three measurable objectives agreed with the client"
+      ],
+      "keyTakeaways": [
+        "ADB replaces four legacy servicing systems with a single core platform",
+        "Account origination is the highest-value journey in phase one",
+        "Every change request is assessed against the three agreed objectives"
+      ],
+      "sections": [
+        {
+          "id": "cd-s1",
+          "heading": "Why the programme exists",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Project ADB modernises the account origination and servicing journey for Meridian Financial Services. Today the journey spans four legacy systems, three reconciliation spreadsheets and a manual document control process. Average onboarding time for a new SME customer is 9 days, against a target of 2."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Consolidate origination, KYC and servicing into one platform",
+                "Remove the nightly reconciliation batch between core systems",
+                "Give relationship managers a single view of customer status",
+                "Make onboarding auditable end to end"
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "info",
+              "title": "Programme in one line",
+              "text": "Ship the ADB core platform, prove it with Meridian's pilot branch cohort, and prepare for the phase-two migration of servicing."
+            }
+          ]
+        },
+        {
+          "id": "cd-s2",
+          "heading": "Domain vocabulary",
+          "durationMinutes": 15,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Term", "Meaning in this programme", "Who owns it"],
+              "rows": [
+                ["Origination", "The journey that creates a new customer record and product holding", "Product"],
+                ["KYC pack", "The evidence bundle that satisfies the client's due-diligence policy", "Compliance"],
+                ["Service request", "A post-sale change to an existing customer, such as an address update", "Operations"],
+                ["Account manager", "The relationship owner who initiates most origination journeys", "Sales"],
+                ["Cut-off", "The daily boundary after which changes settle the next working day", "Operations"]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "These five terms cover roughly 80% of the vocabulary used in the daily scrum. If a term is not in this list, ask your product analyst before making an assumption about it."
+            },
+            {
+              "type": "quote",
+              "text": "The ADB platform replaces four legacy servicing systems with a single core platform, and cuts new-customer onboarding from nine days to two.",
+              "author": "Programme objectives, agreed with Meridian Financial Services"
+            }
+          ]
+        },
+        {
+          "id": "cd-s3",
+          "heading": "Stakeholders and objectives",
+          "durationMinutes": 8,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Three stakeholder groups shape day-to-day decisions. The client product owner prioritises the backlog, the Meridian delivery lead approves environment and data decisions, and the HCLTech engineering lead owns technical standards and quality gates."
+            },
+            {
+              "type": "steps",
+              "items": [
+                "Client product owner — owns scope and acceptance",
+                "Meridian delivery lead — owns data, access and environment readiness",
+                "HCLTech engineering lead — owns standards, releases and quality gates",
+                "Learning program manager — owns induction and readiness for every new joiner"
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "warning",
+              "title": "Escalation path",
+              "text": "Domain questions that block delivery escalate to the product analyst first. Raise them in the shared channel rather than waiting for the weekly sync — the sync is for decisions, not for unblocking yourself."
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-cd-1",
+          "label": "Project ADB Programme Charter",
+          "type": "pdf",
+          "size": "1.8 MB",
+          "href": "#/content/doc-client-domain-charter"
+        },
+        {
+          "id": "res-cd-2",
+          "label": "Meridian Domain Glossary",
+          "type": "doc",
+          "size": "320 KB",
+          "href": "#/content/doc-domain-glossary"
+        }
+      ],
+      "quizId": "quiz-client-domain",
+      "documentIds": ["doc-client-domain-charter", "doc-domain-glossary"],
+      "updatedAt": "2026-09-28T10:00:00.000Z"
+    },
+    {
+      "id": "mod-environment-access",
+      "slug": "environment-and-access",
+      "title": "Environment & Access",
+      "summary": "Required tools, the access-request process, approved setup guidance and common setup issues.",
+      "description": "Everything needed to get a productive workstation running on day one, including how to request the access you do not yet have.",
+      "category": "common",
+      "level": 1,
+      "order": 2,
+      "durationMinutes": 40,
+      "icon": "key-round",
+      "objectives": [
+        "Request the access bundle for your learning role",
+        "Complete the approved workstation setup checklist",
+        "Diagnose the four most common access and setup failures",
+        "Locate the support channels for blocked access requests"
+      ],
+      "keyTakeaways": [
+        "Access is granted by role bundle, not by individual request",
+        "The Dev baseline takes 90 minutes on a clean corporate laptop",
+        "A failed MFA enrolment is resolved by IT within one working day"
+      ],
+      "sections": [
+        {
+          "id": "ea-s1",
+          "heading": "Access bundles by role",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Access is provisioned as a bundle matched to your learning role. The platform, the source control, the CI pipeline and the environment are granted together so that your first commit does not fail on a missing permission."
+            },
+            {
+              "type": "table",
+              "headers": ["Bundle", "Contains", "Typical lead time"],
+              "rows": [
+                ["Developer baseline", "Repository, IDE, CI, development and integration environments", "2 working days"],
+                ["Tester baseline", "Test management, Jira, browser lab, reporting access", "2 working days"],
+                ["Lead bundle", "All baseline access plus production read-only and reporting", "3 working days"]
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "info",
+              "title": "Requesting access",
+              "text": "Raise the access request through the service desk using the template named after your learning role. Your manager approves the business justification; IT fulfils it."
+            }
+          ]
+        },
+        {
+          "id": "ea-s2",
+          "heading": "Approved workstation setup",
+          "durationMinutes": 18,
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                "Join the HCLTech domain and complete multi-factor enrolment",
+                "Install the pinned engineering baseline from the software portal",
+                "Clone the repository from the organisation path, not a personal fork",
+                "Verify the toolchain with the standard environment check script",
+                "Complete one successful build on the development environment"
+              ]
+            },
+            {
+              "type": "code",
+              "language": "bash",
+              "code": "# Verify the pinned toolchain before your first commit\nhcl env verify --profile developer\n\n# Expected output\n[ok] node      20.15.0   (pinned 20.15.x)\n[ok] jdk       17.0.9    (pinned 17.x)\n[ok] database  client    16.x\n[warn] container runtime not detected - optional"
+            },
+            {
+              "type": "paragraph",
+              "text": "The verification script is safe to run at any time. If a line reports a mismatch, do not attempt to upgrade the tool locally — use the pinned installer so that your environment matches the build agents."
+            }
+          ]
+        },
+        {
+          "id": "ea-s3",
+          "heading": "Common setup issues",
+          "durationMinutes": 10,
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Certificate trust error on the internal registry — re-import the corporate root certificate and restart the terminal",
+                "Repository permission denied on the first clone — request the role bundle, not repository-level access",
+                "MFA device already registered — remove the old enrolment before adding a new device",
+                "VPN splits the internal registry route — connect before the installer runs"
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "danger",
+              "title": "Never share credentials",
+              "text": "Access is individual and audited. Sharing a token, a password or a session cookie breaches the project information handling policy and will result in access removal."
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-ea-1",
+          "label": "Environment Setup Guide",
+          "type": "pdf",
+          "size": "2.4 MB",
+          "href": "#/content/doc-environment-guide"
+        },
+        {
+          "id": "res-ea-2",
+          "label": "Access Request Matrix",
+          "type": "doc",
+          "size": "180 KB",
+          "href": "#/content/doc-access-matrix"
+        }
+      ],
+      "quizId": "quiz-environment-access",
+      "documentIds": ["doc-environment-guide", "doc-access-matrix"],
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "mod-application-overview",
+      "slug": "application-overview",
+      "title": "Application Overview",
+      "summary": "Application purpose, key functional areas, user journeys and the high-level business flow.",
+      "description": "A guided tour of the ADB platform: the bounded contexts it is built from, the journey an account manager drives, and where the interesting logic lives.",
+      "category": "common",
+      "level": 2,
+      "order": 3,
+      "durationMinutes": 45,
+      "icon": "layout-grid",
+      "objectives": [
+        "Describe the purpose and bounded contexts of the ADB platform",
+        "Trace the happy path of a customer origination journey",
+        "Identify which functional area owns a given business rule",
+        "Explain how the platform integrates with the client estate"
+      ],
+      "keyTakeaways": [
+        "The platform is organised into five bounded contexts with explicit ownership",
+        "Origination is a saga: each step can be compensated independently",
+        "Nothing writes to the core ledger directly — all movement flows through the posting service"
+      ],
+      "sections": [
+        {
+          "id": "ao-s1",
+          "heading": "Purpose and bounded contexts",
+          "durationMinutes": 15,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The ADB platform provides origination, servicing and reporting for Meridian's retail and SME customer base. It is deliberately split into five bounded contexts so that each has one owning team and one clear contract."
+            },
+            {
+              "type": "table",
+              "headers": ["Context", "Responsibility", "Owning team"],
+              "rows": [
+                ["Customer", "Identity, party records, KYC state", "Customer Platform"],
+                ["Product", "Eligible products, pricing, terms", "Product Engineering"],
+                ["Origination", "Journey orchestration and case state", "Origination Squad"],
+                ["Servicing", "Post-sale change requests", "Servicing Squad"],
+                ["Posting", "Ledger movement, statements, reconciliation", "Payments Team"]
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "info",
+              "title": "Why the split matters",
+              "text": "Business rules belong to exactly one context. If a change appears to affect two, it usually means the rule is in the wrong place — raise it in design review rather than duplicating the logic."
+            }
+          ]
+        },
+        {
+          "id": "ao-s2",
+          "heading": "The origination journey",
+          "durationMinutes": 18,
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                "Capture the customer intent and validate mandatory details",
+                "Run the KYC pack assembly and the client screening checks",
+                "Select products and apply the pricing rules",
+                "Execute the client-side verification handshake",
+                "Open the accounts and post the opening balances",
+                "Emit the confirmation pack and close the case"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Each step is a separate, resumable operation. If the client screening check fails, the journey pauses and returns a structured reason code rather than failing silently — this is what makes the saga compensable."
+            },
+            {
+              "type": "code",
+              "language": "json",
+              "code": "{\n  \"caseId\": \"CASE-2026-000417\",\n  \"step\": \"kyc-screening\",\n  \"status\": \"paused\",\n  \"reasonCode\": \"KYC_MANUAL_REVIEW\",\n  \"resumable\": true,\n  \"nextAction\": \"route to compliance queue\"\n}"
+            }
+          ]
+        },
+        {
+          "id": "ao-s3",
+          "heading": "Integration with the client estate",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Client CRM supplies customer intent and relationship ownership",
+                "The core banking host remains the system of record for balances",
+                "The screening service handles sanctions and PEP checks synchronously",
+                "Document generation produces the customer-facing pack asynchronously"
+              ]
+            },
+            {
+              "type": "quote",
+              "text": "Nothing writes to the core ledger directly — all movement flows through the posting service, which is the only component that holds ledger credentials.",
+              "author": "Architecture decision record ADR-014"
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-ao-1",
+          "label": "Architecture Overview",
+          "type": "pdf",
+          "size": "3.1 MB",
+          "href": "#/content/doc-architecture-overview"
+        },
+        {
+          "id": "res-ao-2",
+          "label": "Bounded Context Map",
+          "type": "link",
+          "href": "#/content/doc-context-map"
+        }
+      ],
+      "quizId": "quiz-application-overview",
+      "documentIds": ["doc-architecture-overview", "doc-context-map"],
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "mod-security-guidelines",
+      "slug": "security-and-guidelines",
+      "title": "Security & Guidelines",
+      "summary": "Access procedures, information handling, project restrictions and compliance expectations.",
+      "description": "The rules that keep client data safe, and the reasoning behind them. Read this module carefully — it is assessed and it is enforced.",
+      "category": "common",
+      "level": 3,
+      "order": 4,
+      "durationMinutes": 30,
+      "icon": "shield-check",
+      "objectives": [
+        "Handle client data according to the classification policy",
+        "Apply the project restrictions that apply to your role",
+        "Recognise and report a security incident promptly",
+        "Meet the compliance expectations attached to this engagement"
+      ],
+      "keyTakeaways": [
+        "Client data never leaves approved environments, including your own laptop",
+        "Production data is masked in every non-production environment",
+        "Suspected incidents are reported within one hour, without investigating first"
+      ],
+      "sections": [
+        {
+          "id": "sg-s1",
+          "heading": "Information handling",
+          "durationMinutes": 10,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Classification", "Examples", "Handling rule"],
+              "rows": [
+                ["Restricted", "Customer identity documents, credentials, live balances", "Approved environment only, no local copy"],
+                ["Confidential", "Architecture, pricing, non-public roadmaps", "Encrypted at rest, shared on a need-to-know basis"],
+                ["Internal", "Team schedules, sprint plans, process documents", "Company systems and approved collaboration tools"]
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "danger",
+              "title": "No client data on personal devices",
+              "text": "Downloading client data to a personal device, a personal cloud drive or a personal AI assistant is prohibited, regardless of the volume."
+            }
+          ]
+        },
+        {
+          "id": "sg-s2",
+          "heading": "Project restrictions",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Production change freeze runs from the last business day of each month",
+                "Direct database access in production is prohibited; use the approved servicing tools",
+                "Client-side code may not be published to any public repository",
+                "Third-party tools require a security review before use with project data"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "These restrictions are not negotiable and are audited by the client's assurance team on a monthly basis. If a task appears to require breaking one, stop and raise it — the correct answer is never to proceed quietly."
+            }
+          ]
+        },
+        {
+          "id": "sg-s3",
+          "heading": "Incident reporting",
+          "durationMinutes": 8,
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                "Stop the activity and secure the data you are working with",
+                "Report through the security helpline within one hour of discovery",
+                "Preserve the state — do not delete logs, files or messages",
+                "Wait for direction from the security team before communicating further"
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "warning",
+              "title": "Do not self-investigate",
+              "text": "You are not expected to determine the scope or the cause. Reporting quickly is what limits impact, and you will never be penalised for a good-faith report."
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-sg-1",
+          "label": "Information Handling Policy",
+          "type": "pdf",
+          "size": "1.2 MB",
+          "href": "#/content/doc-security-policy"
+        },
+        {
+          "id": "res-sg-2",
+          "label": "Project Restrictions Summary",
+          "type": "doc",
+          "size": "140 KB",
+          "href": "#/content/doc-project-restrictions"
+        }
+      ],
+      "quizId": "quiz-security-guidelines",
+      "documentIds": ["doc-security-policy", "doc-project-restrictions"],
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "mod-dev-lifecycle",
+      "slug": "development-lifecycle-and-standards",
+      "title": "Development Lifecycle & Standards",
+      "summary": "Requirement understanding, task workflow, branching, pull requests, reviews and logging.",
+      "description": "How work moves from a requirement to a released change on ADB, and the conventions the team expects you to follow.",
+      "category": "developer",
+      "level": 2,
+      "order": 5,
+      "durationMinutes": 50,
+      "icon": "git-branch",
+      "objectives": [
+        "Interpret a requirement before writing any code",
+        "Follow the agreed branch and pull request conventions",
+        "Write a reviewable pull request that passes the review checklist",
+        "Log work to the standard expected by the delivery lead"
+      ],
+      "keyTakeaways": [
+        "Branches are named feature/<ticket>-<slug> and are rebased, never merged",
+        "Every pull request needs one reviewer and one linked ticket",
+        "Daily logging is mandatory — it is the client-mandated audit trail"
+      ],
+      "sections": [
+        {
+          "id": "dl-s1",
+          "heading": "Requirement understanding",
+          "durationMinutes": 15,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A ticket is a starting point, not a specification. Before writing code, restate the requirement in your own words, list the acceptance criteria you can verify, and flag the assumptions you are making. A five-minute clarification now prevents a day of rework later."
+            },
+            {
+              "type": "steps",
+              "items": [
+                "Read the ticket and the linked acceptance criteria",
+                "Check the domain glossary for the business vocabulary",
+                "Write down your assumptions and share them with the product analyst",
+                "Break the work into a slice you can deliver in one day"
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "info",
+              "title": "Ask in the channel, not in a meeting",
+              "text": "Domain questions belong in the shared project channel so that the answer is searchable and reusable by the next joiner."
+            }
+          ]
+        },
+        {
+          "id": "dl-s2",
+          "heading": "Branching and pull requests",
+          "durationMinutes": 20,
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Branch from develop using feature/<ticket>-<slug>",
+                "Rebase onto the latest develop rather than merging develop into your branch",
+                "Keep pull requests under 400 changed lines",
+                "One ticket per pull request, one reviewer minimum",
+                "Squash merge only after the pipeline is green"
+              ]
+            },
+            {
+              "type": "code",
+              "language": "bash",
+              "code": "git switch develop\ngit pull --rebase\ngit switch -c feature/ADB-1421-case-retry\n\n# ... commit your work ...\n\ngit fetch origin\ngit rebase origin/develop\ngit push --force-with-lease"
+            },
+            {
+              "type": "paragraph",
+              "text": "Force-push to your own feature branch is expected and safe. Never force-push to develop, release or any shared branch."
+            }
+          ]
+        },
+        {
+          "id": "dl-s3",
+          "heading": "Reviews and logging",
+          "durationMinutes": 15,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Review checklist item", "What the reviewer checks"],
+              "rows": [
+                ["Correctness", "Does the change satisfy every acceptance criterion?"],
+                ["Tests", "Is the new behaviour covered by an automated test?"],
+                ["Security", "Is client data handled according to the classification policy?"],
+                ["Observability", "Is there enough logging to diagnose a production issue?"]
+              ]
+            },
+            {
+              "type": "quote",
+              "text": "Daily logging is mandatory — it is the client-mandated audit trail.",
+              "author": "ADB delivery guidelines, section 4"
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-dl-1",
+          "label": "Engineering Standards",
+          "type": "pdf",
+          "size": "2.9 MB",
+          "href": "#/content/doc-engineering-standards"
+        },
+        {
+          "id": "res-dl-2",
+          "label": "Pull Request Template",
+          "type": "link",
+          "href": "#/content/doc-pr-template"
+        }
+      ],
+      "quizId": "quiz-dev-lifecycle",
+      "documentIds": ["doc-engineering-standards", "doc-pr-template"],
+      "updatedAt": "2026-10-10T10:00:00.000Z"
+    },
+    {
+      "id": "mod-unit-testing",
+      "slug": "unit-testing-and-release-awareness",
+      "title": "Unit Testing & Release Awareness",
+      "summary": "Unit testing, debugging, defect-fix verification, quality gates and release responsibilities.",
+      "description": "What quality means on this project: the tests you own, the gates your change must pass, and how a release is put together.",
+      "category": "developer",
+      "level": 3,
+      "order": 6,
+      "durationMinutes": 45,
+      "icon": "flask-conical",
+      "objectives": [
+        "Write unit tests that assert behaviour rather than implementation",
+        "Use the debugging workflow the team relies on",
+        "Verify a defect fix with a regression test that would have caught it",
+        "Describe the release quality gates and your responsibilities in them"
+      ],
+      "keyTakeaways": [
+        "A test that cannot fail is not a test — mutation-check your assumptions",
+        "Every defect fix ships with a test that reproduces the original failure",
+        "The release gate requires green pipeline, reviewer approval and an updated changelog"
+      ],
+      "sections": [
+        {
+          "id": "ut-s1",
+          "heading": "Unit testing standards",
+          "durationMinutes": 18,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The team follows test-driven development for domain logic. A test describes an observable behaviour of the unit, using the public interface only, so that a refactor does not break the suite."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Arrange, act, assert — one behaviour per test",
+                "No network calls, no sleeps, no reliance on test execution order",
+                "Assert on the business outcome, not on log output or internal fields",
+                "Every domain rule needs at least one boundary case"
+              ]
+            },
+            {
+              "type": "code",
+              "language": "typescript",
+              "code": "describe('screening decision', () => {\n  it('pauses the case when the screening result needs review', () => {\n    const result = decideScreening({ outcome: 'manual_review' });\n\n    expect(result.status).toBe('paused');\n    expect(result.reasonCode).toBe('KYC_MANUAL_REVIEW');\n    expect(result.resumable).toBe(true);\n  });\n});"
+            }
+          ]
+        },
+        {
+          "id": "ut-s2",
+          "heading": "Debugging workflow",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                "Reproduce the failure locally with the smallest possible input",
+                "Write a failing test that captures the failure",
+                "Find the cause — a failing test narrows the search considerably",
+                "Fix the cause, not the symptom",
+                "Run the full module suite before you push"
+              ]
+            },
+            {
+              "type": "callout",
+              "tone": "warning",
+              "title": "Never fix it in production",
+              "text": "A hotfix that is not covered by a regression test will be re-broken by the next release. If a hotfix is genuinely unavoidable, the test is raised as a follow-up ticket before the change is closed."
+            }
+          ]
+        },
+        {
+          "id": "ut-s3",
+          "heading": "Release quality gates",
+          "durationMinutes": 15,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Gate", "Threshold", "Owner"],
+              "rows": [
+                ["Unit coverage on changed code", "At least 80%", "Developer"],
+                ["Pipeline status", "All stages green", "Developer"],
+                ["Review approval", "One reviewer, checklist complete", "Reviewer"],
+                ["Regression suite", "No new failures", "QA squad"],
+                ["Changelog entry", "Present and accurate", "Developer"]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "A release is cut from the release branch, never from a feature branch. The release manager coordinates the cut; every developer owns the changelog entry for their own change."
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-ut-1",
+          "label": "Testing Standards",
+          "type": "pdf",
+          "size": "1.9 MB",
+          "href": "#/content/doc-testing-standards"
+        },
+        {
+          "id": "res-ut-2",
+          "label": "Release Runbook",
+          "type": "doc",
+          "size": "760 KB",
+          "href": "#/content/doc-release-runbook"
+        }
+      ],
+      "quizId": "quiz-unit-testing",
+      "documentIds": ["doc-testing-standards", "doc-release-runbook"],
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "mod-testing-strategy",
+      "slug": "testing-strategy-and-design",
+      "title": "Testing Strategy & Design",
+      "summary": "Testing lifecycle, test types, environments, acceptance criteria and exception scenarios.",
+      "description": "The testing approach for ADB: the levels of test, the pyramid the team maintains, and how a test case is designed so that it is useful.",
+      "category": "tester",
+      "level": 1,
+      "order": 7,
+      "durationMinutes": 45,
+      "icon": "target",
+      "objectives": [
+        "Describe the test levels and the shape of the test pyramid",
+        "Select the right environment for a given test activity",
+        "Derive executable test cases from acceptance criteria",
+        "Design explicit tests for exception and negative scenarios"
+      ],
+      "keyTakeaways": [
+        "Most defects are found at unit level, so the pyramid is deliberately wide at the base",
+        "Acceptance criteria are the source of truth for test design",
+        "An exception path without a test is an uncovered risk, not a low priority"
+      ],
+      "sections": [
+        {
+          "id": "ts-s1",
+          "heading": "Test levels and pyramid",
+          "durationMinutes": 15,
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Unit — domain rules and edge cases, owned by the developer",
+                "Component — a bounded context exercised in isolation",
+                "Contract — the agreement between two contexts",
+                "Integration — the journey across contexts and external systems",
+                "System — the end-to-end journey the client cares about"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The team's target ratio is roughly 70% unit, 20% integration and 10% end-to-end. A suite that inverts this ratio is slow, flaky and expensive, and it will not sustain a two-week release cadence."
+            },
+            {
+              "type": "callout",
+              "tone": "info",
+              "title": "Your role on the pyramid",
+              "text": "As a tester you author the component, contract and system level suites. You do not write unit tests for domain code, but you do raise defects when the unit behaviour contradicts the acceptance criteria."
+            }
+          ]
+        },
+        {
+          "id": "ts-s2",
+          "heading": "Environments",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Environment", "Data", "Typical use"],
+              "rows": [
+                ["Local", "Developer fixtures", "Exploratory scripting"],
+                ["Integration", "Synthetic, seeded", "Automated integration suites"],
+                ["System test", "Masked, seeded", "System and regression suites"],
+                ["UAT", "Masked, client-owned", "Client acceptance"]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Client data is masked in every non-production environment. If a test needs a specific data shape, it is created from the approved synthetic data generator rather than copied from production."
+            }
+          ]
+        },
+        {
+          "id": "ts-s3",
+          "heading": "Designing test cases",
+          "durationMinutes": 18,
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                "Read the acceptance criterion and identify the observable outcome",
+                "Define the preconditions and the seeded data",
+                "Write the happy path first",
+                "Derive the boundary and negative cases",
+                "Define the expected result precisely enough to be automated"
+              ]
+            },
+            {
+              "type": "code",
+              "language": "text",
+              "code": "AC-3  When screening returns a manual-review outcome,\n     the case pauses with reason code KYC_MANUAL_REVIEW\n     and remains resumable.\n\nTC-114  Given a case in 'kyc-screening' with a manual-review\n     screening outcome, when the screening step executes, then the\n     case status is 'paused', the reason code is 'KYC_MANUAL_REVIEW'\n     and the case is resumable."
+            },
+            {
+              "type": "callout",
+              "tone": "warning",
+              "title": "Negative cases are not optional",
+              "text": "Every exception path in the requirements needs an explicit negative case. If it is not specified, raise it with the product analyst — an unspecified exception is a design gap, not a testing inconvenience."
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-ts-1",
+          "label": "Test Strategy Document",
+          "type": "pdf",
+          "size": "2.2 MB",
+          "href": "#/content/doc-test-strategy"
+        },
+        {
+          "id": "res-ts-2",
+          "label": "Environment Data Matrix",
+          "type": "doc",
+          "size": "210 KB",
+          "href": "#/content/doc-env-data-matrix"
+        }
+      ],
+      "quizId": "quiz-testing-strategy",
+      "documentIds": ["doc-test-strategy", "doc-env-data-matrix"],
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "mod-test-data-execution",
+      "slug": "test-data-and-execution",
+      "title": "Test Data & Execution",
+      "summary": "Approved test-data practices, test execution, evidence capture, result reporting and retesting.",
+      "description": "How test data is created, how a suite is executed and traced, and how the evidence trail is produced for the client.",
+      "category": "tester",
+      "level": 2,
+      "order": 8,
+      "durationMinutes": 40,
+      "icon": "database",
+      "objectives": [
+        "Create compliant test data through the approved generator",
+        "Execute a suite and record the outcome in the tracker",
+        "Capture evidence that satisfies the client audit requirement",
+        "Retest a defect fix and close it correctly"
+      ],
+      "keyTakeaways": [
+        "All test data is synthetic and generated, never copied from production",
+        "A defect cannot be closed without an attached execution evidence link",
+        "Retesting happens on the same environment and the same data as the original failure"
+      ],
+      "sections": [
+        {
+          "id": "td-s1",
+          "heading": "Approved test-data practices",
+          "durationMinutes": 14,
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Generate data with the approved synthetic data generator",
+                "Never copy, export or screenshot production customer records",
+                "Seed identifiers deterministically so that failures are reproducible",
+                "Clean up seeded data at the end of each execution window"
+              ]
+            },
+            {
+              "type": "code",
+              "language": "bash",
+              "code": "# Create a deterministic seed for a test execution\nhcl testdata seed --profile sme-retail --count 50 --seed 20260412\n\n# Verify the environment is clean before execution\nhcl testdata verify --environment system-test"
+            },
+            {
+              "type": "callout",
+              "tone": "danger",
+              "title": "Real identities are never used",
+              "text": "Even when a defect requires a specific value, reproduce it with synthetic data that has the same shape. The client audits test-data provenance quarterly."
+            }
+          ]
+        },
+        {
+          "id": "td-s2",
+          "heading": "Execution and evidence",
+          "durationMinutes": 14,
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                "Confirm the environment and the data seed before starting",
+                "Execute the suite in the tracker, one test case at a time",
+                "Attach the evidence artefact — screenshot, log excerpt or API trace",
+                "Update the result status and add a note explaining anything unusual",
+                "Summarise the run and publish it to the shared channel"
+              ]
+            },
+            {
+              "type": "table",
+              "headers": ["Result", "Meaning", "Next action"],
+              "rows": [
+                ["Pass", "Observed behaviour matches the expected result", "Record and move on"],
+                ["Fail", "Observed behaviour deviates from the expected result", "Raise a defect with evidence"],
+                ["Blocked", "An environmental issue prevents execution", "Raise an environment defect, do not mark as failed"],
+                ["Skipped", "The case is not applicable in this cycle", "Justify in the run summary"]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "td-s3",
+          "heading": "Retesting",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A fix is retested on the same environment and the same data as the original failure. Retesting on a different environment frequently produces a false pass and sends a real defect back into the release."
+            },
+            {
+              "type": "callout",
+              "tone": "info",
+              "title": "Closing a defect",
+              "text": "A defect is closed only when the retest passes and the evidence link is present. If the fix is incomplete, reopen the defect with a note rather than raising a new one."
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-td-1",
+          "label": "Test Data Handbook",
+          "type": "pdf",
+          "size": "1.6 MB",
+          "href": "#/content/doc-test-data-handbook"
+        },
+        {
+          "id": "res-td-2",
+          "label": "Evidence Standards",
+          "type": "doc",
+          "size": "150 KB",
+          "href": "#/content/doc-evidence-standards"
+        }
+      ],
+      "quizId": "quiz-test-data-execution",
+      "documentIds": ["doc-test-data-handbook", "doc-evidence-standards"],
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "mod-regression-validation",
+      "slug": "defect-regression-release-validation",
+      "title": "Defect, Regression & Release Validation",
+      "summary": "Defect reporting, severity and priority, regression selection, smoke testing and release-readiness checks.",
+      "description": "How defects are raised and prioritised, how the regression suite is selected for a release, and what a release readiness review checks.",
+      "category": "tester",
+      "level": 3,
+      "order": 9,
+      "durationMinutes": 40,
+      "icon": "bug",
+      "objectives": [
+        "Write a defect report that a developer can act on immediately",
+        "Distinguish severity from priority and apply the project's definitions",
+        "Select a regression scope appropriate to the change",
+        "Run a smoke suite and reach a defensible release recommendation"
+      ],
+      "keyTakeaways": [
+        "Severity describes the impact; priority describes the urgency — they are not the same",
+        "Regression scope is risk-based, and the selection is documented",
+        "A release recommendation always states what was and was not tested"
+      ],
+      "sections": [
+        {
+          "id": "rv-s1",
+          "heading": "Defect reporting",
+          "durationMinutes": 14,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Severity", "Definition", "Example"],
+              "rows": [
+                ["Blocker", "The system is unusable or data is at risk", "Posting service cannot reach the core ledger"],
+                ["Critical", "A core journey is broken with no workaround", "A new customer cannot be onboarded at all"],
+                ["Major", "A journey is broken but a workaround exists", "Statement totals are wrong for one account type"],
+                ["Minor", "A defect with limited impact", "A label is truncated on a narrow screen"]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Priority is separate from severity. A Minor cosmetic issue on a customer-facing journey can be higher priority than a Major issue in an internal tool. Priority reflects urgency, severity reflects impact."
+            },
+            {
+              "type": "callout",
+              "tone": "info",
+              "title": "A good defect report",
+              "text": "Include what you expected, what happened, the environment and data seed, and the evidence. A report that needs a question to understand is a report that will sit in the queue."
+            }
+          ]
+        },
+        {
+          "id": "rv-s2",
+          "heading": "Regression selection",
+          "durationMinutes": 14,
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Always include the smoke suite and the impacted journey",
+                "Add every suite that shares a service or data with the change",
+                "Include the last three release regression suites as a baseline",
+                "Document the selection and the rationale in the release ticket"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Regression selection is risk-based, not habit-based. Selecting the full suite every cycle is not safer — it is slower, and a suite that always runs eventually gets skipped under pressure."
+            }
+          ]
+        },
+        {
+          "id": "rv-s3",
+          "heading": "Release validation",
+          "durationMinutes": 12,
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                "Run the smoke suite on the release candidate",
+                "Confirm the regression scope completed with no new failures",
+                "Verify the defect backlog for anything blocking release",
+                "Publish the release recommendation with an explicit list of what was not tested"
+              ]
+            },
+            {
+              "type": "quote",
+              "text": "A release recommendation always states what was and was not tested — an unqualified 'ready' is not an acceptable answer.",
+              "author": "ADB release readiness checklist"
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-rv-1",
+          "label": "Defect Management Guide",
+          "type": "pdf",
+          "size": "1.4 MB",
+          "href": "#/content/doc-defect-guide"
+        },
+        {
+          "id": "res-rv-2",
+          "label": "Release Readiness Checklist",
+          "type": "doc",
+          "size": "190 KB",
+          "href": "#/content/doc-release-checklist"
+        }
+      ],
+      "quizId": "quiz-regression-validation",
+      "documentIds": ["doc-defect-guide", "doc-release-checklist"],
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    }
+  ]
+}

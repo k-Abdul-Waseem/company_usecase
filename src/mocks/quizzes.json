@@ -1,0 +1,121 @@
+{
+  "quizzes": [
+    {
+      "id": "quiz-client-domain",
+      "moduleId": "mod-client-domain",
+      "moduleTitle": "Client & Domain",
+      "title": "Client & Domain Check",
+      "description": "Confirm you can use the programme's business vocabulary and name its stakeholders.",
+      "category": "common",
+      "durationMinutes": 10,
+      "passingScore": 70,
+      "questionCount": 5,
+      "difficulty": "easy",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-environment-access",
+      "moduleId": "mod-environment-access",
+      "moduleTitle": "Environment & Access",
+      "title": "Environment & Access Check",
+      "description": "Access bundles, the approved setup sequence and the common setup failures.",
+      "category": "common",
+      "durationMinutes": 10,
+      "passingScore": 70,
+      "questionCount": 5,
+      "difficulty": "easy",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-application-overview",
+      "moduleId": "mod-application-overview",
+      "moduleTitle": "Application Overview",
+      "title": "Application Overview Check",
+      "description": "Bounded contexts, the origination saga and integration boundaries.",
+      "category": "common",
+      "durationMinutes": 12,
+      "passingScore": 70,
+      "questionCount": 5,
+      "difficulty": "moderate",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-security-guidelines",
+      "moduleId": "mod-security-guidelines",
+      "moduleTitle": "Security & Guidelines",
+      "title": "Security & Compliance Check",
+      "description": "Information handling, project restrictions and incident reporting. Assessed and enforced.",
+      "category": "common",
+      "durationMinutes": 12,
+      "passingScore": 80,
+      "questionCount": 5,
+      "difficulty": "moderate",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-dev-lifecycle",
+      "moduleId": "mod-dev-lifecycle",
+      "moduleTitle": "Development Lifecycle & Standards",
+      "title": "Development Lifecycle Check",
+      "description": "Requirement understanding, branch conventions, reviews and logging.",
+      "category": "developer",
+      "durationMinutes": 12,
+      "passingScore": 70,
+      "questionCount": 5,
+      "difficulty": "moderate",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-unit-testing",
+      "moduleId": "mod-unit-testing",
+      "moduleTitle": "Unit Testing & Release Awareness",
+      "title": "Unit Testing & Quality Gates Check",
+      "description": "Test design, debugging discipline and the release quality gates.",
+      "category": "developer",
+      "durationMinutes": 15,
+      "passingScore": 70,
+      "questionCount": 5,
+      "difficulty": "advanced",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-testing-strategy",
+      "moduleId": "mod-testing-strategy",
+      "moduleTitle": "Testing Strategy & Design",
+      "title": "Testing Strategy Check",
+      "description": "The test pyramid, environment selection and test-case design from acceptance criteria.",
+      "category": "tester",
+      "durationMinutes": 12,
+      "passingScore": 70,
+      "questionCount": 5,
+      "difficulty": "moderate",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-test-data-execution",
+      "moduleId": "mod-test-data-execution",
+      "moduleTitle": "Test Data & Execution",
+      "title": "Test Data & Execution Check",
+      "description": "Synthetic data practices, execution evidence and correct retesting.",
+      "category": "tester",
+      "durationMinutes": 12,
+      "passingScore": 70,
+      "questionCount": 5,
+      "difficulty": "moderate",
+      "attemptsAllowed": 3
+    },
+    {
+      "id": "quiz-regression-validation",
+      "moduleId": "mod-regression-validation",
+      "moduleTitle": "Defect, Regression & Release Validation",
+      "title": "Regression & Release Validation Check",
+      "description": "Severity versus priority, risk-based regression scope and release recommendations.",
+      "category": "tester",
+      "durationMinutes": 15,
+      "passingScore": 75,
+      "questionCount": 5,
+      "difficulty": "advanced",
+      "attemptsAllowed": 3
+    }
+  ]
+}
